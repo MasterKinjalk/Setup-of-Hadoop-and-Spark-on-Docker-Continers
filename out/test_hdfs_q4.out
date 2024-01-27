@@ -1,0 +1,485 @@
+ cs511p1_template-main-1 copy resources/hadoop-terasort-3.3.6.jar to cs511p1_template-main-1:/hadoop-terasort-3.3.6.jar Copying
+ cs511p1_template-main-1 copy resources/hadoop-terasort-3.3.6.jar to cs511p1_template-main-1:/hadoop-terasort-3.3.6.jar Copied
++ hdfs dfs -rm -r -f tera-in tera-out tera-val
+/usr/local/hadoop/etc/hadoop/hadoop-env.sh: line 432: JAVA_HOME: command not found
++ hadoop jar /hadoop-terasort-3.3.6.jar teragen 1000000 tera-in
+/usr/local/hadoop/etc/hadoop/hadoop-env.sh: line 432: JAVA_HOME: command not found
+2024-01-27 06:29:38,217 INFO impl.MetricsConfig: Loaded properties from hadoop-metrics2.properties
+2024-01-27 06:29:38,455 INFO impl.MetricsSystemImpl: Scheduled Metric snapshot period at 10 second(s).
+2024-01-27 06:29:38,456 INFO impl.MetricsSystemImpl: JobTracker metrics system started
+2024-01-27 06:29:39,122 INFO terasort.TeraGen: Generating 1000000 using 1
+2024-01-27 06:29:39,140 INFO mapreduce.JobSubmitter: number of splits:1
+2024-01-27 06:29:39,388 INFO mapreduce.JobSubmitter: Submitting tokens for job: job_local1083978440_0001
+2024-01-27 06:29:39,389 INFO mapreduce.JobSubmitter: Executing with tokens: []
+2024-01-27 06:29:39,597 INFO mapreduce.Job: The url to track the job: http://localhost:8080/
+2024-01-27 06:29:39,600 INFO mapreduce.Job: Running job: job_local1083978440_0001
+2024-01-27 06:29:39,603 INFO mapred.LocalJobRunner: OutputCommitter set in config null
+2024-01-27 06:29:39,638 INFO output.PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+2024-01-27 06:29:39,639 INFO output.FileOutputCommitter: File Output Committer Algorithm version is 2
+2024-01-27 06:29:39,639 INFO output.FileOutputCommitter: FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+2024-01-27 06:29:39,640 INFO mapred.LocalJobRunner: OutputCommitter is org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter
+2024-01-27 06:29:39,819 INFO mapred.LocalJobRunner: Waiting for map tasks
+2024-01-27 06:29:39,822 INFO mapred.LocalJobRunner: Starting task: attempt_local1083978440_0001_m_000000_0
+2024-01-27 06:29:39,896 INFO output.PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+2024-01-27 06:29:39,896 INFO output.FileOutputCommitter: File Output Committer Algorithm version is 2
+2024-01-27 06:29:39,896 INFO output.FileOutputCommitter: FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+2024-01-27 06:29:39,943 INFO mapred.Task:  Using ResourceCalculatorProcessTree : [ ]
+2024-01-27 06:29:39,967 INFO mapred.MapTask: Processing split: org.apache.hadoop.examples.terasort.TeraGen$RangeInputFormat$RangeInputSplit@133f8a5
+2024-01-27 06:29:40,616 INFO mapreduce.Job: Job job_local1083978440_0001 running in uber mode : false
+2024-01-27 06:29:40,619 INFO mapreduce.Job:  map 0% reduce 0%
+2024-01-27 06:29:41,593 INFO mapred.LocalJobRunner: 
+2024-01-27 06:29:52,024 INFO mapred.LocalJobRunner: map
+2024-01-27 06:29:52,635 INFO mapreduce.Job:  map 100% reduce 0%
+2024-01-27 06:29:55,552 INFO mapred.Task: Task:attempt_local1083978440_0001_m_000000_0 is done. And is in the process of committing
+2024-01-27 06:29:55,560 INFO mapred.LocalJobRunner: map
+2024-01-27 06:29:55,560 INFO mapred.Task: Task attempt_local1083978440_0001_m_000000_0 is allowed to commit now
+2024-01-27 06:29:55,641 INFO output.FileOutputCommitter: Saved output of task 'attempt_local1083978440_0001_m_000000_0' to hdfs://main:9000/user/root/tera-in
+2024-01-27 06:29:55,642 INFO mapred.LocalJobRunner: map
+2024-01-27 06:29:55,642 INFO mapred.Task: Task 'attempt_local1083978440_0001_m_000000_0' done.
+2024-01-27 06:29:55,649 INFO mapred.Task: Final Counters for attempt_local1083978440_0001_m_000000_0: Counters: 22
+	File System Counters
+		FILE: Number of bytes read=281474
+		FILE: Number of bytes written=919719
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+		HDFS: Number of bytes read=0
+		HDFS: Number of bytes written=100000000
+		HDFS: Number of read operations=5
+		HDFS: Number of large read operations=0
+		HDFS: Number of write operations=3
+		HDFS: Number of bytes read erasure-coded=0
+	Map-Reduce Framework
+		Map input records=1000000
+		Map output records=1000000
+		Input split bytes=82
+		Spilled Records=0
+		Failed Shuffles=0
+		Merged Map outputs=0
+		GC time elapsed (ms)=30
+		Total committed heap usage (bytes)=307232768
+	org.apache.hadoop.examples.terasort.TeraGen$Counters
+		CHECKSUM=2148987642402270
+	File Input Format Counters 
+		Bytes Read=0
+	File Output Format Counters 
+		Bytes Written=100000000
+2024-01-27 06:29:55,650 INFO mapred.LocalJobRunner: Finishing task: attempt_local1083978440_0001_m_000000_0
+2024-01-27 06:29:55,651 INFO mapred.LocalJobRunner: map task executor complete.
+2024-01-27 06:29:56,638 INFO mapreduce.Job: Job job_local1083978440_0001 completed successfully
+2024-01-27 06:29:56,647 INFO mapreduce.Job: Counters: 22
+	File System Counters
+		FILE: Number of bytes read=281474
+		FILE: Number of bytes written=919719
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+		HDFS: Number of bytes read=0
+		HDFS: Number of bytes written=100000000
+		HDFS: Number of read operations=5
+		HDFS: Number of large read operations=0
+		HDFS: Number of write operations=3
+		HDFS: Number of bytes read erasure-coded=0
+	Map-Reduce Framework
+		Map input records=1000000
+		Map output records=1000000
+		Input split bytes=82
+		Spilled Records=0
+		Failed Shuffles=0
+		Merged Map outputs=0
+		GC time elapsed (ms)=30
+		Total committed heap usage (bytes)=307232768
+	org.apache.hadoop.examples.terasort.TeraGen$Counters
+		CHECKSUM=2148987642402270
+	File Input Format Counters 
+		Bytes Read=0
+	File Output Format Counters 
+		Bytes Written=100000000
++ hadoop jar /hadoop-terasort-3.3.6.jar terasort tera-in tera-out
+/usr/local/hadoop/etc/hadoop/hadoop-env.sh: line 432: JAVA_HOME: command not found
+2024-01-27 06:29:57,645 INFO terasort.TeraSort: starting
+2024-01-27 06:29:58,591 INFO input.FileInputFormat: Total input files to process : 1
+Spent 159ms computing base-splits.
+Spent 5ms computing TeraScheduler splits.
+Computing input splits took 165ms
+Sampling 1 splits of 1
+Making 1 from 100000 sampled records
+Computing parititions took 654ms
+Spent 821ms computing partitions.
+2024-01-27 06:29:59,374 INFO impl.MetricsConfig: Loaded properties from hadoop-metrics2.properties
+2024-01-27 06:29:59,456 INFO impl.MetricsSystemImpl: Scheduled Metric snapshot period at 10 second(s).
+2024-01-27 06:29:59,456 INFO impl.MetricsSystemImpl: JobTracker metrics system started
+2024-01-27 06:29:59,637 INFO mapreduce.JobSubmitter: number of splits:1
+2024-01-27 06:29:59,785 INFO mapreduce.JobSubmitter: Submitting tokens for job: job_local874823947_0001
+2024-01-27 06:29:59,785 INFO mapreduce.JobSubmitter: Executing with tokens: []
+2024-01-27 06:30:00,128 INFO mapred.LocalDistributedCacheManager: Creating symlink: /tmp/hadoop-root/mapred/local/job_local874823947_0001_2e2b4b8c-bf49-4e5d-b2d8-99dccb07d920/_partition.lst <- //_partition.lst
+2024-01-27 06:30:00,135 INFO mapred.LocalDistributedCacheManager: Localized hdfs://main:9000/user/root/tera-out/_partition.lst as file:/tmp/hadoop-root/mapred/local/job_local874823947_0001_2e2b4b8c-bf49-4e5d-b2d8-99dccb07d920/_partition.lst
+2024-01-27 06:30:00,216 INFO mapreduce.Job: The url to track the job: http://localhost:8080/
+2024-01-27 06:30:00,218 INFO mapreduce.Job: Running job: job_local874823947_0001
+2024-01-27 06:30:00,220 INFO mapred.LocalJobRunner: OutputCommitter set in config null
+2024-01-27 06:30:00,224 INFO output.PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+2024-01-27 06:30:00,225 INFO output.FileOutputCommitter: File Output Committer Algorithm version is 2
+2024-01-27 06:30:00,226 INFO output.FileOutputCommitter: FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+2024-01-27 06:30:00,226 INFO mapred.LocalJobRunner: OutputCommitter is org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter
+2024-01-27 06:30:00,296 INFO mapred.LocalJobRunner: Waiting for map tasks
+2024-01-27 06:30:00,297 INFO mapred.LocalJobRunner: Starting task: attempt_local874823947_0001_m_000000_0
+2024-01-27 06:30:00,326 INFO output.PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+2024-01-27 06:30:00,326 INFO output.FileOutputCommitter: File Output Committer Algorithm version is 2
+2024-01-27 06:30:00,326 INFO output.FileOutputCommitter: FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+2024-01-27 06:30:00,344 INFO mapred.Task:  Using ResourceCalculatorProcessTree : [ ]
+2024-01-27 06:30:00,349 INFO mapred.MapTask: Processing split: hdfs://main:9000/user/root/tera-in/part-m-00000:0+100000000
+2024-01-27 06:30:00,394 INFO mapred.MapTask: (EQUATOR) 0 kvi 26214396(104857584)
+2024-01-27 06:30:00,395 INFO mapred.MapTask: mapreduce.task.io.sort.mb: 100
+2024-01-27 06:30:00,395 INFO mapred.MapTask: soft limit at 83886080
+2024-01-27 06:30:00,395 INFO mapred.MapTask: bufstart = 0; bufvoid = 104857600
+2024-01-27 06:30:00,395 INFO mapred.MapTask: kvstart = 26214396; length = 6553600
+2024-01-27 06:30:00,404 INFO mapred.MapTask: Map output collector class = org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+2024-01-27 06:30:00,982 INFO mapred.MapTask: Spilling map output
+2024-01-27 06:30:00,982 INFO mapred.MapTask: bufstart = 0; bufend = 72511698; bufvoid = 104857600
+2024-01-27 06:30:00,982 INFO mapred.MapTask: kvstart = 26214396(104857584); kvend = 23370804(93483216); length = 2843593/6553600
+2024-01-27 06:30:00,982 INFO mapred.MapTask: (EQUATOR) 75355282 kvi 18838816(75355264)
+2024-01-27 06:30:01,223 INFO mapreduce.Job: Job job_local874823947_0001 running in uber mode : false
+2024-01-27 06:30:01,225 INFO mapreduce.Job:  map 0% reduce 0%
+2024-01-27 06:30:02,505 INFO mapred.MapTask: Finished spill 0
+2024-01-27 06:30:02,505 INFO mapred.MapTask: (RESET) equator 75355282 kv 18838816(75355264) kvi 18127932(72511728)
+2024-01-27 06:30:02,554 INFO mapred.LocalJobRunner: 
+2024-01-27 06:30:02,558 INFO mapred.MapTask: Starting flush of map output
+2024-01-27 06:30:02,559 INFO mapred.MapTask: Spilling map output
+2024-01-27 06:30:02,559 INFO mapred.MapTask: bufstart = 75355282; bufend = 104843584; bufvoid = 104857600
+2024-01-27 06:30:02,559 INFO mapred.MapTask: kvstart = 18838816(75355264); kvend = 17682416(70729664); length = 1156401/6553600
+2024-01-27 06:30:03,058 INFO mapred.MapTask: Finished spill 1
+2024-01-27 06:30:03,069 INFO mapred.Merger: Merging 2 sorted segments
+2024-01-27 06:30:03,088 INFO mapred.Merger: Down to the last merge-pass, with 2 segments left of total size: 103999986 bytes
+2024-01-27 06:30:03,730 INFO mapred.Task: Task:attempt_local874823947_0001_m_000000_0 is done. And is in the process of committing
+2024-01-27 06:30:03,734 INFO mapred.LocalJobRunner: map > sort
+2024-01-27 06:30:03,734 INFO mapred.Task: Task 'attempt_local874823947_0001_m_000000_0' done.
+2024-01-27 06:30:03,740 INFO mapred.Task: Final Counters for attempt_local874823947_0001_m_000000_0: Counters: 23
+	File System Counters
+		FILE: Number of bytes read=104281528
+		FILE: Number of bytes written=208919491
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+		HDFS: Number of bytes read=110000000
+		HDFS: Number of bytes written=0
+		HDFS: Number of read operations=19
+		HDFS: Number of large read operations=0
+		HDFS: Number of write operations=2
+		HDFS: Number of bytes read erasure-coded=0
+	Map-Reduce Framework
+		Map input records=1000000
+		Map output records=1000000
+		Map output bytes=102000000
+		Map output materialized bytes=104000006
+		Input split bytes=112
+		Combine input records=0
+		Spilled Records=2000000
+		Failed Shuffles=0
+		Merged Map outputs=0
+		GC time elapsed (ms)=110
+		Total committed heap usage (bytes)=533200896
+	File Input Format Counters 
+		Bytes Read=100000000
+2024-01-27 06:30:03,740 INFO mapred.LocalJobRunner: Finishing task: attempt_local874823947_0001_m_000000_0
+2024-01-27 06:30:03,741 INFO mapred.LocalJobRunner: map task executor complete.
+2024-01-27 06:30:03,751 INFO mapred.LocalJobRunner: Waiting for reduce tasks
+2024-01-27 06:30:03,751 INFO mapred.LocalJobRunner: Starting task: attempt_local874823947_0001_r_000000_0
+2024-01-27 06:30:03,759 INFO output.PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+2024-01-27 06:30:03,759 INFO output.FileOutputCommitter: File Output Committer Algorithm version is 2
+2024-01-27 06:30:03,759 INFO output.FileOutputCommitter: FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+2024-01-27 06:30:03,759 INFO mapred.Task:  Using ResourceCalculatorProcessTree : [ ]
+2024-01-27 06:30:03,774 INFO mapred.ReduceTask: Using ShuffleConsumerPlugin: org.apache.hadoop.mapreduce.task.reduce.Shuffle@2153379b
+2024-01-27 06:30:03,777 WARN impl.MetricsSystemImpl: JobTracker metrics system already initialized!
+2024-01-27 06:30:03,808 INFO reduce.MergeManagerImpl: MergerManager: memoryLimit=1248906368, maxSingleShuffleLimit=312226592, mergeThreshold=824278208, ioSortFactor=10, memToMemMergeOutputsThreshold=10
+2024-01-27 06:30:03,810 INFO reduce.EventFetcher: attempt_local874823947_0001_r_000000_0 Thread started: EventFetcher for fetching Map Completion Events
+2024-01-27 06:30:03,864 INFO reduce.LocalFetcher: localfetcher#1 about to shuffle output of map attempt_local874823947_0001_m_000000_0 decomp: 104000002 len: 104000006 to MEMORY
+2024-01-27 06:30:04,007 INFO reduce.InMemoryMapOutput: Read 104000002 bytes from map-output for attempt_local874823947_0001_m_000000_0
+2024-01-27 06:30:04,040 INFO reduce.MergeManagerImpl: closeInMemoryFile -> map-output of size: 104000002, inMemoryMapOutputs.size() -> 1, commitMemory -> 0, usedMemory ->104000002
+2024-01-27 06:30:04,045 INFO reduce.EventFetcher: EventFetcher is interrupted.. Returning
+2024-01-27 06:30:04,047 INFO mapred.LocalJobRunner: 1 / 1 copied.
+2024-01-27 06:30:04,047 INFO reduce.MergeManagerImpl: finalMerge called with 1 in-memory map-outputs and 0 on-disk map-outputs
+2024-01-27 06:30:04,050 INFO mapred.Merger: Merging 1 sorted segments
+2024-01-27 06:30:04,051 INFO mapred.Merger: Down to the last merge-pass, with 1 segments left of total size: 103999989 bytes
+2024-01-27 06:30:04,229 INFO mapreduce.Job:  map 100% reduce 0%
+2024-01-27 06:30:04,431 INFO reduce.MergeManagerImpl: Merged 1 segments, 104000002 bytes to disk to satisfy reduce memory limit
+2024-01-27 06:30:04,432 INFO reduce.MergeManagerImpl: Merging 1 files, 104000006 bytes from disk
+2024-01-27 06:30:04,433 INFO reduce.MergeManagerImpl: Merging 0 segments, 0 bytes from memory into reduce
+2024-01-27 06:30:04,433 INFO mapred.Merger: Merging 1 sorted segments
+2024-01-27 06:30:04,434 INFO mapred.Merger: Down to the last merge-pass, with 1 segments left of total size: 103999989 bytes
+2024-01-27 06:30:04,434 INFO mapred.LocalJobRunner: 1 / 1 copied.
+2024-01-27 06:30:04,633 INFO Configuration.deprecation: mapred.skip.on is deprecated. Instead, use mapreduce.job.skiprecords
+2024-01-27 06:30:09,316 INFO mapred.Task: Task:attempt_local874823947_0001_r_000000_0 is done. And is in the process of committing
+2024-01-27 06:30:09,320 INFO mapred.LocalJobRunner: 1 / 1 copied.
+2024-01-27 06:30:09,321 INFO mapred.Task: Task attempt_local874823947_0001_r_000000_0 is allowed to commit now
+2024-01-27 06:30:09,391 INFO output.FileOutputCommitter: Saved output of task 'attempt_local874823947_0001_r_000000_0' to hdfs://main:9000/user/root/tera-out
+2024-01-27 06:30:09,392 INFO mapred.LocalJobRunner: reduce > reduce
+2024-01-27 06:30:09,392 INFO mapred.Task: Task 'attempt_local874823947_0001_r_000000_0' done.
+2024-01-27 06:30:09,393 INFO mapred.Task: Final Counters for attempt_local874823947_0001_r_000000_0: Counters: 30
+	File System Counters
+		FILE: Number of bytes read=312281572
+		FILE: Number of bytes written=312919497
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+		HDFS: Number of bytes read=110000000
+		HDFS: Number of bytes written=100000000
+		HDFS: Number of read operations=24
+		HDFS: Number of large read operations=0
+		HDFS: Number of write operations=4
+		HDFS: Number of bytes read erasure-coded=0
+	Map-Reduce Framework
+		Combine input records=0
+		Combine output records=0
+		Reduce input groups=1000000
+		Reduce shuffle bytes=104000006
+		Reduce input records=1000000
+		Reduce output records=1000000
+		Spilled Records=1000000
+		Shuffled Maps =1
+		Failed Shuffles=0
+		Merged Map outputs=1
+		GC time elapsed (ms)=11
+		Total committed heap usage (bytes)=703070208
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	File Output Format Counters 
+		Bytes Written=100000000
+2024-01-27 06:30:09,393 INFO mapred.LocalJobRunner: Finishing task: attempt_local874823947_0001_r_000000_0
+2024-01-27 06:30:09,393 INFO mapred.LocalJobRunner: reduce task executor complete.
+2024-01-27 06:30:10,233 INFO mapreduce.Job:  map 100% reduce 100%
+2024-01-27 06:30:10,234 INFO mapreduce.Job: Job job_local874823947_0001 completed successfully
+2024-01-27 06:30:10,249 INFO mapreduce.Job: Counters: 36
+	File System Counters
+		FILE: Number of bytes read=416563100
+		FILE: Number of bytes written=521838988
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+		HDFS: Number of bytes read=220000000
+		HDFS: Number of bytes written=100000000
+		HDFS: Number of read operations=43
+		HDFS: Number of large read operations=0
+		HDFS: Number of write operations=6
+		HDFS: Number of bytes read erasure-coded=0
+	Map-Reduce Framework
+		Map input records=1000000
+		Map output records=1000000
+		Map output bytes=102000000
+		Map output materialized bytes=104000006
+		Input split bytes=112
+		Combine input records=0
+		Combine output records=0
+		Reduce input groups=1000000
+		Reduce shuffle bytes=104000006
+		Reduce input records=1000000
+		Reduce output records=1000000
+		Spilled Records=3000000
+		Shuffled Maps =1
+		Failed Shuffles=0
+		Merged Map outputs=1
+		GC time elapsed (ms)=121
+		Total committed heap usage (bytes)=1236271104
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	File Input Format Counters 
+		Bytes Read=100000000
+	File Output Format Counters 
+		Bytes Written=100000000
+2024-01-27 06:30:10,249 INFO terasort.TeraSort: done
++ hadoop jar /hadoop-terasort-3.3.6.jar teravalidate tera-out tera-val
+/usr/local/hadoop/etc/hadoop/hadoop-env.sh: line 432: JAVA_HOME: command not found
+2024-01-27 06:30:12,151 INFO impl.MetricsConfig: Loaded properties from hadoop-metrics2.properties
+2024-01-27 06:30:12,275 INFO impl.MetricsSystemImpl: Scheduled Metric snapshot period at 10 second(s).
+2024-01-27 06:30:12,275 INFO impl.MetricsSystemImpl: JobTracker metrics system started
+2024-01-27 06:30:12,691 INFO input.FileInputFormat: Total input files to process : 1
+Spent 107ms computing base-splits.
+Spent 3ms computing TeraScheduler splits.
+2024-01-27 06:30:12,710 INFO mapreduce.JobSubmitter: number of splits:1
+2024-01-27 06:30:12,811 INFO mapreduce.JobSubmitter: Submitting tokens for job: job_local1182595258_0001
+2024-01-27 06:30:12,812 INFO mapreduce.JobSubmitter: Executing with tokens: []
+2024-01-27 06:30:12,959 INFO mapreduce.Job: The url to track the job: http://localhost:8080/
+2024-01-27 06:30:12,961 INFO mapreduce.Job: Running job: job_local1182595258_0001
+2024-01-27 06:30:12,962 INFO mapred.LocalJobRunner: OutputCommitter set in config null
+2024-01-27 06:30:12,974 INFO output.PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+2024-01-27 06:30:12,976 INFO output.FileOutputCommitter: File Output Committer Algorithm version is 2
+2024-01-27 06:30:12,976 INFO output.FileOutputCommitter: FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+2024-01-27 06:30:12,977 INFO mapred.LocalJobRunner: OutputCommitter is org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter
+2024-01-27 06:30:13,100 INFO mapred.LocalJobRunner: Waiting for map tasks
+2024-01-27 06:30:13,100 INFO mapred.LocalJobRunner: Starting task: attempt_local1182595258_0001_m_000000_0
+2024-01-27 06:30:13,137 INFO output.PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+2024-01-27 06:30:13,137 INFO output.FileOutputCommitter: File Output Committer Algorithm version is 2
+2024-01-27 06:30:13,137 INFO output.FileOutputCommitter: FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+2024-01-27 06:30:13,159 INFO mapred.Task:  Using ResourceCalculatorProcessTree : [ ]
+2024-01-27 06:30:13,170 INFO mapred.MapTask: Processing split: hdfs://main:9000/user/root/tera-out/part-r-00000:0+100000000
+2024-01-27 06:30:13,220 INFO mapred.MapTask: (EQUATOR) 0 kvi 26214396(104857584)
+2024-01-27 06:30:13,221 INFO mapred.MapTask: mapreduce.task.io.sort.mb: 100
+2024-01-27 06:30:13,221 INFO mapred.MapTask: soft limit at 83886080
+2024-01-27 06:30:13,221 INFO mapred.MapTask: bufstart = 0; bufvoid = 104857600
+2024-01-27 06:30:13,221 INFO mapred.MapTask: kvstart = 26214396; length = 6553600
+2024-01-27 06:30:13,225 INFO mapred.MapTask: Map output collector class = org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+2024-01-27 06:30:13,971 INFO mapreduce.Job: Job job_local1182595258_0001 running in uber mode : false
+2024-01-27 06:30:13,972 INFO mapreduce.Job:  map 0% reduce 0%
+2024-01-27 06:30:14,135 INFO mapred.LocalJobRunner: 
+2024-01-27 06:30:14,140 INFO mapred.MapTask: Starting flush of map output
+2024-01-27 06:30:14,141 INFO mapred.MapTask: Spilling map output
+2024-01-27 06:30:14,141 INFO mapred.MapTask: bufstart = 0; bufend = 81; bufvoid = 104857600
+2024-01-27 06:30:14,141 INFO mapred.MapTask: kvstart = 26214396(104857584); kvend = 26214388(104857552); length = 9/6553600
+2024-01-27 06:30:14,173 INFO mapred.MapTask: Finished spill 0
+2024-01-27 06:30:14,193 INFO mapred.Task: Task:attempt_local1182595258_0001_m_000000_0 is done. And is in the process of committing
+2024-01-27 06:30:14,200 INFO mapred.LocalJobRunner: map
+2024-01-27 06:30:14,201 INFO mapred.Task: Task 'attempt_local1182595258_0001_m_000000_0' done.
+2024-01-27 06:30:14,217 INFO mapred.Task: Final Counters for attempt_local1182595258_0001_m_000000_0: Counters: 23
+	File System Counters
+		FILE: Number of bytes read=281517
+		FILE: Number of bytes written=920793
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+		HDFS: Number of bytes read=100000000
+		HDFS: Number of bytes written=0
+		HDFS: Number of read operations=5
+		HDFS: Number of large read operations=0
+		HDFS: Number of write operations=1
+		HDFS: Number of bytes read erasure-coded=0
+	Map-Reduce Framework
+		Map input records=1000000
+		Map output records=3
+		Map output bytes=81
+		Map output materialized bytes=93
+		Input split bytes=113
+		Combine input records=0
+		Spilled Records=3
+		Failed Shuffles=0
+		Merged Map outputs=0
+		GC time elapsed (ms)=25
+		Total committed heap usage (bytes)=414711808
+	File Input Format Counters 
+		Bytes Read=100000000
+2024-01-27 06:30:14,217 INFO mapred.LocalJobRunner: Finishing task: attempt_local1182595258_0001_m_000000_0
+2024-01-27 06:30:14,219 INFO mapred.LocalJobRunner: map task executor complete.
+2024-01-27 06:30:14,227 INFO mapred.LocalJobRunner: Waiting for reduce tasks
+2024-01-27 06:30:14,227 INFO mapred.LocalJobRunner: Starting task: attempt_local1182595258_0001_r_000000_0
+2024-01-27 06:30:14,249 INFO output.PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+2024-01-27 06:30:14,249 INFO output.FileOutputCommitter: File Output Committer Algorithm version is 2
+2024-01-27 06:30:14,249 INFO output.FileOutputCommitter: FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+2024-01-27 06:30:14,250 INFO mapred.Task:  Using ResourceCalculatorProcessTree : [ ]
+2024-01-27 06:30:14,257 INFO mapred.ReduceTask: Using ShuffleConsumerPlugin: org.apache.hadoop.mapreduce.task.reduce.Shuffle@3e61f86f
+2024-01-27 06:30:14,260 WARN impl.MetricsSystemImpl: JobTracker metrics system already initialized!
+2024-01-27 06:30:14,288 INFO reduce.MergeManagerImpl: MergerManager: memoryLimit=1248906368, maxSingleShuffleLimit=312226592, mergeThreshold=824278208, ioSortFactor=10, memToMemMergeOutputsThreshold=10
+2024-01-27 06:30:14,295 INFO reduce.EventFetcher: attempt_local1182595258_0001_r_000000_0 Thread started: EventFetcher for fetching Map Completion Events
+2024-01-27 06:30:14,339 INFO reduce.LocalFetcher: localfetcher#1 about to shuffle output of map attempt_local1182595258_0001_m_000000_0 decomp: 89 len: 93 to MEMORY
+2024-01-27 06:30:14,346 INFO reduce.InMemoryMapOutput: Read 89 bytes from map-output for attempt_local1182595258_0001_m_000000_0
+2024-01-27 06:30:14,351 INFO reduce.MergeManagerImpl: closeInMemoryFile -> map-output of size: 89, inMemoryMapOutputs.size() -> 1, commitMemory -> 0, usedMemory ->89
+2024-01-27 06:30:14,353 INFO reduce.EventFetcher: EventFetcher is interrupted.. Returning
+2024-01-27 06:30:14,354 INFO mapred.LocalJobRunner: 1 / 1 copied.
+2024-01-27 06:30:14,355 INFO reduce.MergeManagerImpl: finalMerge called with 1 in-memory map-outputs and 0 on-disk map-outputs
+2024-01-27 06:30:14,364 INFO mapred.Merger: Merging 1 sorted segments
+2024-01-27 06:30:14,365 INFO mapred.Merger: Down to the last merge-pass, with 1 segments left of total size: 78 bytes
+2024-01-27 06:30:14,367 INFO reduce.MergeManagerImpl: Merged 1 segments, 89 bytes to disk to satisfy reduce memory limit
+2024-01-27 06:30:14,369 INFO reduce.MergeManagerImpl: Merging 1 files, 93 bytes from disk
+2024-01-27 06:30:14,370 INFO reduce.MergeManagerImpl: Merging 0 segments, 0 bytes from memory into reduce
+2024-01-27 06:30:14,371 INFO mapred.Merger: Merging 1 sorted segments
+2024-01-27 06:30:14,373 INFO mapred.Merger: Down to the last merge-pass, with 1 segments left of total size: 78 bytes
+2024-01-27 06:30:14,374 INFO mapred.LocalJobRunner: 1 / 1 copied.
+2024-01-27 06:30:14,605 INFO Configuration.deprecation: mapred.skip.on is deprecated. Instead, use mapreduce.job.skiprecords
+2024-01-27 06:30:14,975 INFO mapreduce.Job:  map 100% reduce 0%
+2024-01-27 06:30:15,034 INFO mapred.Task: Task:attempt_local1182595258_0001_r_000000_0 is done. And is in the process of committing
+2024-01-27 06:30:15,038 INFO mapred.LocalJobRunner: 1 / 1 copied.
+2024-01-27 06:30:15,039 INFO mapred.Task: Task attempt_local1182595258_0001_r_000000_0 is allowed to commit now
+2024-01-27 06:30:15,208 INFO output.FileOutputCommitter: Saved output of task 'attempt_local1182595258_0001_r_000000_0' to hdfs://main:9000/user/root/tera-val
+2024-01-27 06:30:15,209 INFO mapred.LocalJobRunner: reduce > reduce
+2024-01-27 06:30:15,209 INFO mapred.Task: Task 'attempt_local1182595258_0001_r_000000_0' done.
+2024-01-27 06:30:15,210 INFO mapred.Task: Final Counters for attempt_local1182595258_0001_r_000000_0: Counters: 30
+	File System Counters
+		FILE: Number of bytes read=281735
+		FILE: Number of bytes written=920886
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+		HDFS: Number of bytes read=100000000
+		HDFS: Number of bytes written=23
+		HDFS: Number of read operations=10
+		HDFS: Number of large read operations=0
+		HDFS: Number of write operations=3
+		HDFS: Number of bytes read erasure-coded=0
+	Map-Reduce Framework
+		Combine input records=0
+		Combine output records=0
+		Reduce input groups=3
+		Reduce shuffle bytes=93
+		Reduce input records=3
+		Reduce output records=1
+		Spilled Records=3
+		Shuffled Maps =1
+		Failed Shuffles=0
+		Merged Map outputs=1
+		GC time elapsed (ms)=0
+		Total committed heap usage (bytes)=414711808
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	File Output Format Counters 
+		Bytes Written=23
+2024-01-27 06:30:15,210 INFO mapred.LocalJobRunner: Finishing task: attempt_local1182595258_0001_r_000000_0
+2024-01-27 06:30:15,210 INFO mapred.LocalJobRunner: reduce task executor complete.
+2024-01-27 06:30:15,975 INFO mapreduce.Job:  map 100% reduce 100%
+2024-01-27 06:30:15,976 INFO mapreduce.Job: Job job_local1182595258_0001 completed successfully
+2024-01-27 06:30:15,989 INFO mapreduce.Job: Counters: 36
+	File System Counters
+		FILE: Number of bytes read=563252
+		FILE: Number of bytes written=1841679
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+		HDFS: Number of bytes read=200000000
+		HDFS: Number of bytes written=23
+		HDFS: Number of read operations=15
+		HDFS: Number of large read operations=0
+		HDFS: Number of write operations=4
+		HDFS: Number of bytes read erasure-coded=0
+	Map-Reduce Framework
+		Map input records=1000000
+		Map output records=3
+		Map output bytes=81
+		Map output materialized bytes=93
+		Input split bytes=113
+		Combine input records=0
+		Combine output records=0
+		Reduce input groups=3
+		Reduce shuffle bytes=93
+		Reduce input records=3
+		Reduce output records=1
+		Spilled Records=6
+		Shuffled Maps =1
+		Failed Shuffles=0
+		Merged Map outputs=1
+		GC time elapsed (ms)=25
+		Total committed heap usage (bytes)=829423616
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	File Input Format Counters 
+		Bytes Read=100000000
+	File Output Format Counters 
+		Bytes Written=23
++ hdfs dfs -cat 'tera-val/*'
+/usr/local/hadoop/etc/hadoop/hadoop-env.sh: line 432: JAVA_HOME: command not found
+checksum	7a27e2d0d55de

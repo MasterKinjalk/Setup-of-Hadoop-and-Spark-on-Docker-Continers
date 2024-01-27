@@ -33,9 +33,11 @@ RUN wget https://archive.apache.org/dist/spark/spark-3.4.1/spark-3.4.1-bin-hadoo
     rm spark-3.4.1-bin-hadoop3.tgz
 
 
+# Set Hadoop and Spark versions
 ENV HADOOP_VER=3.3.6
 ENV SPARK_VER=3.4.1
 
+# Set Hadoop and Spark home directories
 ENV HADOOP_HOME=/usr/local/hadoop
 ENV SPARK_HOME=/usr/local/spark
 ENV PATH=$PATH:$HADOOP_HOME/bin:$HADOOP_HOME/sbin:$SPARK_HOME/bin:$SPARK_HOME/sbin
@@ -43,6 +45,10 @@ ENV PATH=$PATH:$HADOOP_HOME/bin:$HADOOP_HOME/sbin:$SPARK_HOME/bin:$SPARK_HOME/sb
 # Copy configuration files
 ADD config/core-site.xml $HADOOP_HOME/etc/hadoop/core-site.xml
 ADD config/yarn-site.xml $HADOOP_HOME/etc/hadoop/yarn-site.xml
+
+# Expose necessary ports
+EXPOSE 7077 8020
+
 
 
 

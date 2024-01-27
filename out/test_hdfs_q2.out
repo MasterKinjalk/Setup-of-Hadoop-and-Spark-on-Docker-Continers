@@ -1,0 +1,9 @@
+ cs511p1_template-main-1 copy resources/fox.txt to cs511p1_template-main-1:/test_fox.txt Copying
+ cs511p1_template-main-1 copy resources/fox.txt to cs511p1_template-main-1:/test_fox.txt Copied
++ hdfs dfs -mkdir -p /test
+/usr/local/hadoop/etc/hadoop/hadoop-env.sh: line 432: JAVA_HOME: command not found
++ hdfs dfs -put -f /test_fox.txt /test/fox.txt
+/usr/local/hadoop/etc/hadoop/hadoop-env.sh: line 432: JAVA_HOME: command not found
++ hdfs dfs -cat /test/fox.txt
+/usr/local/hadoop/etc/hadoop/hadoop-env.sh: line 432: JAVA_HOME: command not found
+The quick brown fox jumps over the lazy dog

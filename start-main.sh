@@ -15,12 +15,12 @@ ssh-copy-id -i ~/.ssh/id_rsa -o 'IdentityFile ~/.ssh/shared_rsa' -o StrictHostKe
 
 # Start HDFS/Spark main here
 
+$SPARK_HOME/sbin/start-master.sh -p 7077 &
 
 hdfs namenode -format
 hdfs namenode &
 hdfs datanode &
 
-$SPARK_HOME/sbin/start-master.sh -p 7077 &
-$SPARK_HOME/sbin/start-worker.sh spark://main:7077 &
+
 
 bash

@@ -1,0 +1,83 @@
+/usr/local/hadoop/etc/hadoop/hadoop-env.sh: line 432: JAVA_HOME: command not found
+Configured Capacity: 808282435584 (752.77 GB)
+Present Capacity: 742979301376 (691.95 GB)
+DFS Remaining: 742979227648 (691.95 GB)
+DFS Used: 73728 (72 KB)
+DFS Used%: 0.00%
+Replicated Blocks:
+	Under replicated blocks: 0
+	Blocks with corrupt replicas: 0
+	Missing blocks: 0
+	Missing blocks (with replication factor 1): 0
+	Low redundancy blocks with highest priority to recover: 0
+	Pending deletion blocks: 0
+Erasure Coded Block Groups: 
+	Low redundancy block groups: 0
+	Block groups with corrupt internal blocks: 0
+	Missing block groups: 0
+	Low redundancy blocks with highest priority to recover: 0
+	Pending deletion blocks: 0
+
+-------------------------------------------------
+Live datanodes (3):
+
+Name: 172.19.0.2:9866 (cs511p1_template-worker2-1.cs511p1_template_default)
+Hostname: worker2
+Decommission Status : Normal
+Configured Capacity: 269427478528 (250.92 GB)
+DFS Used: 24576 (24 KB)
+Non DFS Used: 8007593984 (7.46 GB)
+DFS Remaining: 247659212800 (230.65 GB)
+DFS Used%: 0.00%
+DFS Remaining%: 91.92%
+Configured Cache Capacity: 0 (0 B)
+Cache Used: 0 (0 B)
+Cache Remaining: 0 (0 B)
+Cache Used%: 100.00%
+Cache Remaining%: 0.00%
+Xceivers: 0
+Last contact: Sat Jan 27 06:27:40 UTC 2024
+Last Block Report: Sat Jan 27 06:27:16 UTC 2024
+Num of Blocks: 0
+
+
+Name: 172.19.0.3:9866 (cs511p1_template-worker1-1.cs511p1_template_default)
+Hostname: worker1
+Decommission Status : Normal
+Configured Capacity: 269427478528 (250.92 GB)
+DFS Used: 24576 (24 KB)
+Non DFS Used: 8006676480 (7.46 GB)
+DFS Remaining: 247660105728 (230.65 GB)
+DFS Used%: 0.00%
+DFS Remaining%: 91.92%
+Configured Cache Capacity: 0 (0 B)
+Cache Used: 0 (0 B)
+Cache Remaining: 0 (0 B)
+Cache Used%: 100.00%
+Cache Remaining%: 0.00%
+Xceivers: 0
+Last contact: Sat Jan 27 06:27:40 UTC 2024
+Last Block Report: Sat Jan 27 06:27:16 UTC 2024
+Num of Blocks: 0
+
+
+Name: 172.19.0.4:9866 (main)
+Hostname: main
+Decommission Status : Normal
+Configured Capacity: 269427478528 (250.92 GB)
+DFS Used: 24576 (24 KB)
+Non DFS Used: 8006873088 (7.46 GB)
+DFS Remaining: 247659909120 (230.65 GB)
+DFS Used%: 0.00%
+DFS Remaining%: 91.92%
+Configured Cache Capacity: 0 (0 B)
+Cache Used: 0 (0 B)
+Cache Remaining: 0 (0 B)
+Cache Used%: 100.00%
+Cache Remaining%: 0.00%
+Xceivers: 0
+Last contact: Sat Jan 27 06:27:40 UTC 2024
+Last Block Report: Sat Jan 27 06:27:16 UTC 2024
+Num of Blocks: 0
+
+
