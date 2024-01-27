@@ -12,4 +12,8 @@ ssh-add ~/.ssh/shared_rsa
 
 # Start HDFS/Spark worker here
 
+hdfs datanode &
+
+$SPARK_HOME/sbin/start-worker.sh spark://main:7077 &
+
 bash

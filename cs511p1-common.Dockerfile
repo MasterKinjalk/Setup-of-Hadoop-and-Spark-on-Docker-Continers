@@ -16,3 +16,33 @@ RUN ssh-keygen -t rsa -P '' -f ~/.ssh/shared_rsa -C common && \
 ####################################################################################
 
 # Setup HDFS/Spark resources here
+
+
+# Setup HDFS/Spark resources here
+
+# Download Hadoop binary distribution
+RUN wget https://dlcdn.apache.org/hadoop/common/hadoop-3.3.6/hadoop-3.3.6.tar.gz && \
+    tar -xzf hadoop-3.3.6.tar.gz && \
+    mv hadoop-3.3.6 /usr/local/hadoop && \
+    rm hadoop-3.3.6.tar.gz
+
+# Download Spark binary distribution
+RUN wget https://archive.apache.org/dist/spark/spark-3.4.1/spark-3.4.1-bin-hadoop3.tgz && \
+    tar -xzf spark-3.4.1-bin-hadoop3.tgz && \
+    mv spark-3.4.1-bin-hadoop3 /usr/local/spark && \
+    rm spark-3.4.1-bin-hadoop3.tgz
+
+
+ENV HADOOP_VER=3.3.6
+ENV SPARK_VER=3.4.1
+
+ENV HADOOP_HOME=/usr/local/hadoop
+ENV SPARK_HOME=/usr/local/spark
+ENV PATH=$PATH:$HADOOP_HOME/bin:$HADOOP_HOME/sbin:$SPARK_HOME/bin:$SPARK_HOME/sbin
+
+# Copy configuration files
+ADD config/core-site.xml $HADOOP_HOME/etc/hadoop/core-site.xml
+ADD config/yarn-site.xml $HADOOP_HOME/etc/hadoop/yarn-site.xml
+
+
+
