@@ -1,76 +1,72 @@
 + hadoop org.apache.hadoop.hdfs.server.namenode.NNThroughputBenchmark -fs hdfs://main:9000 -op create -threads 100 -files 10000
-/usr/local/hadoop/etc/hadoop/hadoop-env.sh: line 432: JAVA_HOME: command not found
-2024-01-27 06:27:50,945 INFO namenode.NNThroughputBenchmark: Starting benchmark: create
-2024-01-27 06:27:51,002 INFO namenode.NNThroughputBenchmark: Generate 10000 intputs for create
-2024-01-27 06:27:51,009 INFO namenode.NNThroughputBenchmark: Log level = ERROR
-2024-01-27 06:27:51,068 INFO namenode.NNThroughputBenchmark: Starting 10000 create(s).
-2024-01-27 06:28:34,842 INFO namenode.NNThroughputBenchmark: 
-2024-01-27 06:28:34,842 INFO namenode.NNThroughputBenchmark: --- create inputs ---
-2024-01-27 06:28:34,842 INFO namenode.NNThroughputBenchmark: nrFiles = 10000
-2024-01-27 06:28:34,842 INFO namenode.NNThroughputBenchmark: nrThreads = 100
-2024-01-27 06:28:34,842 INFO namenode.NNThroughputBenchmark: nrFilesPerDir = 4
-2024-01-27 06:28:34,842 INFO namenode.NNThroughputBenchmark: --- create stats  ---
-2024-01-27 06:28:34,842 INFO namenode.NNThroughputBenchmark: # operations: 10000
-2024-01-27 06:28:34,842 INFO namenode.NNThroughputBenchmark: Elapsed Time: 43578
-2024-01-27 06:28:34,843 INFO namenode.NNThroughputBenchmark:  Ops per sec: 229.47358759006838
-2024-01-27 06:28:34,843 INFO namenode.NNThroughputBenchmark: Average Time: 435
+2024-01-28 07:07:06,125 INFO namenode.NNThroughputBenchmark: Starting benchmark: create
+2024-01-28 07:07:06,185 INFO namenode.NNThroughputBenchmark: Generate 10000 intputs for create
+2024-01-28 07:07:06,193 INFO namenode.NNThroughputBenchmark: Log level = ERROR
+2024-01-28 07:07:06,264 INFO namenode.NNThroughputBenchmark: Starting 10000 create(s).
+2024-01-28 07:07:08,571 INFO namenode.NNThroughputBenchmark: 
+2024-01-28 07:07:08,571 INFO namenode.NNThroughputBenchmark: --- create inputs ---
+2024-01-28 07:07:08,572 INFO namenode.NNThroughputBenchmark: nrFiles = 10000
+2024-01-28 07:07:08,572 INFO namenode.NNThroughputBenchmark: nrThreads = 100
+2024-01-28 07:07:08,572 INFO namenode.NNThroughputBenchmark: nrFilesPerDir = 4
+2024-01-28 07:07:08,572 INFO namenode.NNThroughputBenchmark: --- create stats  ---
+2024-01-28 07:07:08,572 INFO namenode.NNThroughputBenchmark: # operations: 10000
+2024-01-28 07:07:08,572 INFO namenode.NNThroughputBenchmark: Elapsed Time: 2190
+2024-01-28 07:07:08,572 INFO namenode.NNThroughputBenchmark:  Ops per sec: 4566.2100456621
+2024-01-28 07:07:08,573 INFO namenode.NNThroughputBenchmark: Average Time: 21
 + hadoop org.apache.hadoop.hdfs.server.namenode.NNThroughputBenchmark -fs hdfs://main:9000 -op open -threads 100 -files 10000
-/usr/local/hadoop/etc/hadoop/hadoop-env.sh: line 432: JAVA_HOME: command not found
-2024-01-27 06:28:40,353 INFO namenode.NNThroughputBenchmark: Starting benchmark: open
-2024-01-27 06:28:40,605 INFO namenode.NNThroughputBenchmark: Generate 10000 intputs for create
-2024-01-27 06:28:40,626 INFO namenode.NNThroughputBenchmark: Log level = ERROR
-2024-01-27 06:28:40,882 INFO namenode.NNThroughputBenchmark: Starting 10000 create(s).
-2024-01-27 06:28:48,116 INFO namenode.NNThroughputBenchmark: Created 10000 files.
-2024-01-27 06:28:48,120 INFO namenode.NNThroughputBenchmark: Generate 10000 intputs for open
-2024-01-27 06:28:48,199 INFO namenode.NNThroughputBenchmark: Log level = ERROR
-2024-01-27 06:28:48,201 INFO namenode.NNThroughputBenchmark: Starting 10000 open(s).
-2024-01-27 06:28:49,457 INFO namenode.NNThroughputBenchmark: 
-2024-01-27 06:28:49,457 INFO namenode.NNThroughputBenchmark: --- open inputs ---
-2024-01-27 06:28:49,457 INFO namenode.NNThroughputBenchmark: nrFiles = 10000
-2024-01-27 06:28:49,457 INFO namenode.NNThroughputBenchmark: nrThreads = 100
-2024-01-27 06:28:49,457 INFO namenode.NNThroughputBenchmark: nrFilesPerDir = 4
-2024-01-27 06:28:49,457 INFO namenode.NNThroughputBenchmark: --- open stats  ---
-2024-01-27 06:28:49,457 INFO namenode.NNThroughputBenchmark: # operations: 10000
-2024-01-27 06:28:49,457 INFO namenode.NNThroughputBenchmark: Elapsed Time: 1149
-2024-01-27 06:28:49,457 INFO namenode.NNThroughputBenchmark:  Ops per sec: 8703.220191470844
-2024-01-27 06:28:49,457 INFO namenode.NNThroughputBenchmark: Average Time: 11
+2024-01-28 07:07:10,338 INFO namenode.NNThroughputBenchmark: Starting benchmark: open
+2024-01-28 07:07:10,398 INFO namenode.NNThroughputBenchmark: Generate 10000 intputs for create
+2024-01-28 07:07:10,406 INFO namenode.NNThroughputBenchmark: Log level = ERROR
+2024-01-28 07:07:10,462 INFO namenode.NNThroughputBenchmark: Starting 10000 create(s).
+2024-01-28 07:07:14,214 INFO namenode.NNThroughputBenchmark: Created 10000 files.
+2024-01-28 07:07:14,216 INFO namenode.NNThroughputBenchmark: Generate 10000 intputs for open
+2024-01-28 07:07:14,244 INFO namenode.NNThroughputBenchmark: Log level = ERROR
+2024-01-28 07:07:14,245 INFO namenode.NNThroughputBenchmark: Starting 10000 open(s).
+2024-01-28 07:07:15,065 INFO namenode.NNThroughputBenchmark: 
+2024-01-28 07:07:15,065 INFO namenode.NNThroughputBenchmark: --- open inputs ---
+2024-01-28 07:07:15,065 INFO namenode.NNThroughputBenchmark: nrFiles = 10000
+2024-01-28 07:07:15,065 INFO namenode.NNThroughputBenchmark: nrThreads = 100
+2024-01-28 07:07:15,065 INFO namenode.NNThroughputBenchmark: nrFilesPerDir = 4
+2024-01-28 07:07:15,065 INFO namenode.NNThroughputBenchmark: --- open stats  ---
+2024-01-28 07:07:15,065 INFO namenode.NNThroughputBenchmark: # operations: 10000
+2024-01-28 07:07:15,065 INFO namenode.NNThroughputBenchmark: Elapsed Time: 805
+2024-01-28 07:07:15,065 INFO namenode.NNThroughputBenchmark:  Ops per sec: 12422.360248447205
+2024-01-28 07:07:15,065 INFO namenode.NNThroughputBenchmark: Average Time: 7
 + hadoop org.apache.hadoop.hdfs.server.namenode.NNThroughputBenchmark -fs hdfs://main:9000 -op delete -threads 100 -files 10000
-/usr/local/hadoop/etc/hadoop/hadoop-env.sh: line 432: JAVA_HOME: command not found
-2024-01-27 06:28:55,002 INFO namenode.NNThroughputBenchmark: Starting benchmark: delete
-2024-01-27 06:28:55,191 INFO namenode.NNThroughputBenchmark: Generate 10000 intputs for create
-2024-01-27 06:28:55,217 INFO namenode.NNThroughputBenchmark: Log level = ERROR
-2024-01-27 06:28:55,444 INFO namenode.NNThroughputBenchmark: Starting 10000 create(s).
-2024-01-27 06:29:02,370 INFO namenode.NNThroughputBenchmark: Created 10000 files.
-2024-01-27 06:29:02,374 INFO namenode.NNThroughputBenchmark: Generate 10000 intputs for delete
-2024-01-27 06:29:02,438 INFO namenode.NNThroughputBenchmark: Log level = ERROR
-2024-01-27 06:29:02,441 INFO namenode.NNThroughputBenchmark: Starting 10000 delete(s).
-2024-01-27 06:29:10,293 INFO namenode.NNThroughputBenchmark: 
-2024-01-27 06:29:10,293 INFO namenode.NNThroughputBenchmark: --- delete inputs ---
-2024-01-27 06:29:10,293 INFO namenode.NNThroughputBenchmark: nrFiles = 10000
-2024-01-27 06:29:10,293 INFO namenode.NNThroughputBenchmark: nrThreads = 100
-2024-01-27 06:29:10,293 INFO namenode.NNThroughputBenchmark: nrFilesPerDir = 4
-2024-01-27 06:29:10,293 INFO namenode.NNThroughputBenchmark: --- delete stats  ---
-2024-01-27 06:29:10,293 INFO namenode.NNThroughputBenchmark: # operations: 10000
-2024-01-27 06:29:10,293 INFO namenode.NNThroughputBenchmark: Elapsed Time: 7801
-2024-01-27 06:29:10,294 INFO namenode.NNThroughputBenchmark:  Ops per sec: 1281.886937572106
-2024-01-27 06:29:10,294 INFO namenode.NNThroughputBenchmark: Average Time: 74
+2024-01-28 07:07:16,772 INFO namenode.NNThroughputBenchmark: Starting benchmark: delete
+2024-01-28 07:07:16,832 INFO namenode.NNThroughputBenchmark: Generate 10000 intputs for create
+2024-01-28 07:07:16,839 INFO namenode.NNThroughputBenchmark: Log level = ERROR
+2024-01-28 07:07:16,897 INFO namenode.NNThroughputBenchmark: Starting 10000 create(s).
+2024-01-28 07:07:20,206 INFO namenode.NNThroughputBenchmark: Created 10000 files.
+2024-01-28 07:07:20,208 INFO namenode.NNThroughputBenchmark: Generate 10000 intputs for delete
+2024-01-28 07:07:20,258 INFO namenode.NNThroughputBenchmark: Log level = ERROR
+2024-01-28 07:07:20,258 INFO namenode.NNThroughputBenchmark: Starting 10000 delete(s).
+2024-01-28 07:07:21,234 INFO namenode.NNThroughputBenchmark: 
+2024-01-28 07:07:21,234 INFO namenode.NNThroughputBenchmark: --- delete inputs ---
+2024-01-28 07:07:21,235 INFO namenode.NNThroughputBenchmark: nrFiles = 10000
+2024-01-28 07:07:21,235 INFO namenode.NNThroughputBenchmark: nrThreads = 100
+2024-01-28 07:07:21,235 INFO namenode.NNThroughputBenchmark: nrFilesPerDir = 4
+2024-01-28 07:07:21,235 INFO namenode.NNThroughputBenchmark: --- delete stats  ---
+2024-01-28 07:07:21,235 INFO namenode.NNThroughputBenchmark: # operations: 10000
+2024-01-28 07:07:21,235 INFO namenode.NNThroughputBenchmark: Elapsed Time: 972
+2024-01-28 07:07:21,235 INFO namenode.NNThroughputBenchmark:  Ops per sec: 10288.0658436214
+2024-01-28 07:07:21,235 INFO namenode.NNThroughputBenchmark: Average Time: 9
 + hadoop org.apache.hadoop.hdfs.server.namenode.NNThroughputBenchmark -fs hdfs://main:9000 -op rename -threads 100 -files 10000
-/usr/local/hadoop/etc/hadoop/hadoop-env.sh: line 432: JAVA_HOME: command not found
-2024-01-27 06:29:14,192 INFO namenode.NNThroughputBenchmark: Starting benchmark: rename
-2024-01-27 06:29:14,372 INFO namenode.NNThroughputBenchmark: Generate 10000 intputs for create
-2024-01-27 06:29:14,389 INFO namenode.NNThroughputBenchmark: Log level = ERROR
-2024-01-27 06:29:14,514 INFO namenode.NNThroughputBenchmark: Starting 10000 create(s).
-2024-01-27 06:29:28,900 INFO namenode.NNThroughputBenchmark: Created 10000 files.
-2024-01-27 06:29:28,902 INFO namenode.NNThroughputBenchmark: Generate 10000 intputs for rename
-2024-01-27 06:29:28,977 INFO namenode.NNThroughputBenchmark: Log level = ERROR
-2024-01-27 06:29:28,979 INFO namenode.NNThroughputBenchmark: Starting 10000 rename(s).
-2024-01-27 06:29:32,267 INFO namenode.NNThroughputBenchmark: 
-2024-01-27 06:29:32,267 INFO namenode.NNThroughputBenchmark: --- rename inputs ---
-2024-01-27 06:29:32,267 INFO namenode.NNThroughputBenchmark: nrFiles = 10000
-2024-01-27 06:29:32,267 INFO namenode.NNThroughputBenchmark: nrThreads = 100
-2024-01-27 06:29:32,267 INFO namenode.NNThroughputBenchmark: nrFilesPerDir = 4
-2024-01-27 06:29:32,267 INFO namenode.NNThroughputBenchmark: --- rename stats  ---
-2024-01-27 06:29:32,267 INFO namenode.NNThroughputBenchmark: # operations: 10000
-2024-01-27 06:29:32,267 INFO namenode.NNThroughputBenchmark: Elapsed Time: 3254
-2024-01-27 06:29:32,267 INFO namenode.NNThroughputBenchmark:  Ops per sec: 3073.140749846343
-2024-01-27 06:29:32,267 INFO namenode.NNThroughputBenchmark: Average Time: 30
+2024-01-28 07:07:23,032 INFO namenode.NNThroughputBenchmark: Starting benchmark: rename
+2024-01-28 07:07:23,094 INFO namenode.NNThroughputBenchmark: Generate 10000 intputs for create
+2024-01-28 07:07:23,101 INFO namenode.NNThroughputBenchmark: Log level = ERROR
+2024-01-28 07:07:23,160 INFO namenode.NNThroughputBenchmark: Starting 10000 create(s).
+2024-01-28 07:07:26,451 INFO namenode.NNThroughputBenchmark: Created 10000 files.
+2024-01-28 07:07:26,454 INFO namenode.NNThroughputBenchmark: Generate 10000 intputs for rename
+2024-01-28 07:07:26,491 INFO namenode.NNThroughputBenchmark: Log level = ERROR
+2024-01-28 07:07:26,492 INFO namenode.NNThroughputBenchmark: Starting 10000 rename(s).
+2024-01-28 07:07:27,582 INFO namenode.NNThroughputBenchmark: 
+2024-01-28 07:07:27,582 INFO namenode.NNThroughputBenchmark: --- rename inputs ---
+2024-01-28 07:07:27,582 INFO namenode.NNThroughputBenchmark: nrFiles = 10000
+2024-01-28 07:07:27,582 INFO namenode.NNThroughputBenchmark: nrThreads = 100
+2024-01-28 07:07:27,582 INFO namenode.NNThroughputBenchmark: nrFilesPerDir = 4
+2024-01-28 07:07:27,582 INFO namenode.NNThroughputBenchmark: --- rename stats  ---
+2024-01-28 07:07:27,582 INFO namenode.NNThroughputBenchmark: # operations: 10000
+2024-01-28 07:07:27,582 INFO namenode.NNThroughputBenchmark: Elapsed Time: 1080
+2024-01-28 07:07:27,582 INFO namenode.NNThroughputBenchmark:  Ops per sec: 9259.25925925926
+2024-01-28 07:07:27,582 INFO namenode.NNThroughputBenchmark: Average Time: 10

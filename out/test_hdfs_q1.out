@@ -1,7 +1,6 @@
-/usr/local/hadoop/etc/hadoop/hadoop-env.sh: line 432: JAVA_HOME: command not found
 Configured Capacity: 808282435584 (752.77 GB)
-Present Capacity: 742979301376 (691.95 GB)
-DFS Remaining: 742979227648 (691.95 GB)
+Present Capacity: 731213316096 (681.00 GB)
+DFS Remaining: 731213242368 (681.00 GB)
 DFS Used: 73728 (72 KB)
 DFS Used%: 0.00%
 Replicated Blocks:
@@ -21,63 +20,63 @@ Erasure Coded Block Groups:
 -------------------------------------------------
 Live datanodes (3):
 
-Name: 172.19.0.2:9866 (cs511p1_template-worker2-1.cs511p1_template_default)
-Hostname: worker2
-Decommission Status : Normal
-Configured Capacity: 269427478528 (250.92 GB)
-DFS Used: 24576 (24 KB)
-Non DFS Used: 8007593984 (7.46 GB)
-DFS Remaining: 247659212800 (230.65 GB)
-DFS Used%: 0.00%
-DFS Remaining%: 91.92%
-Configured Cache Capacity: 0 (0 B)
-Cache Used: 0 (0 B)
-Cache Remaining: 0 (0 B)
-Cache Used%: 100.00%
-Cache Remaining%: 0.00%
-Xceivers: 0
-Last contact: Sat Jan 27 06:27:40 UTC 2024
-Last Block Report: Sat Jan 27 06:27:16 UTC 2024
-Num of Blocks: 0
-
-
-Name: 172.19.0.3:9866 (cs511p1_template-worker1-1.cs511p1_template_default)
+Name: 172.29.0.2:9866 (cs511p1_template-worker1-1.cs511p1_template_default)
 Hostname: worker1
 Decommission Status : Normal
 Configured Capacity: 269427478528 (250.92 GB)
 DFS Used: 24576 (24 KB)
-Non DFS Used: 8006676480 (7.46 GB)
-DFS Remaining: 247660105728 (230.65 GB)
+Non DFS Used: 11929034752 (11.11 GB)
+DFS Remaining: 243737747456 (227.00 GB)
 DFS Used%: 0.00%
-DFS Remaining%: 91.92%
+DFS Remaining%: 90.47%
 Configured Cache Capacity: 0 (0 B)
 Cache Used: 0 (0 B)
 Cache Remaining: 0 (0 B)
 Cache Used%: 100.00%
 Cache Remaining%: 0.00%
 Xceivers: 0
-Last contact: Sat Jan 27 06:27:40 UTC 2024
-Last Block Report: Sat Jan 27 06:27:16 UTC 2024
+Last contact: Sun Jan 28 07:06:55 UTC 2024
+Last Block Report: Sun Jan 28 07:06:31 UTC 2024
 Num of Blocks: 0
 
 
-Name: 172.19.0.4:9866 (main)
+Name: 172.29.0.3:9866 (cs511p1_template-worker2-1.cs511p1_template_default)
+Hostname: worker2
+Decommission Status : Normal
+Configured Capacity: 269427478528 (250.92 GB)
+DFS Used: 24576 (24 KB)
+Non DFS Used: 11929034752 (11.11 GB)
+DFS Remaining: 243737747456 (227.00 GB)
+DFS Used%: 0.00%
+DFS Remaining%: 90.47%
+Configured Cache Capacity: 0 (0 B)
+Cache Used: 0 (0 B)
+Cache Remaining: 0 (0 B)
+Cache Used%: 100.00%
+Cache Remaining%: 0.00%
+Xceivers: 0
+Last contact: Sun Jan 28 07:06:55 UTC 2024
+Last Block Report: Sun Jan 28 07:06:31 UTC 2024
+Num of Blocks: 0
+
+
+Name: 172.29.0.4:9866 (main)
 Hostname: main
 Decommission Status : Normal
 Configured Capacity: 269427478528 (250.92 GB)
 DFS Used: 24576 (24 KB)
-Non DFS Used: 8006873088 (7.46 GB)
-DFS Remaining: 247659909120 (230.65 GB)
+Non DFS Used: 11929034752 (11.11 GB)
+DFS Remaining: 243737747456 (227.00 GB)
 DFS Used%: 0.00%
-DFS Remaining%: 91.92%
+DFS Remaining%: 90.47%
 Configured Cache Capacity: 0 (0 B)
 Cache Used: 0 (0 B)
 Cache Remaining: 0 (0 B)
 Cache Used%: 100.00%
 Cache Remaining%: 0.00%
 Xceivers: 0
-Last contact: Sat Jan 27 06:27:40 UTC 2024
-Last Block Report: Sat Jan 27 06:27:16 UTC 2024
+Last contact: Sun Jan 28 07:06:55 UTC 2024
+Last Block Report: Sun Jan 28 07:06:31 UTC 2024
 Num of Blocks: 0
 
 

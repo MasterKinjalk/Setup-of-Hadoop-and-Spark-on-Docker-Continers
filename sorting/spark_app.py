@@ -4,8 +4,7 @@ from pyspark.sql.functions import col
 spark = SparkSession.builder.appName("CapsSortingApp").getOrCreate()
 
 # Read data from HDFS
-df = spark.read.csv("hdfs://caps.csv", inferSchema=True, header=False).toDF("Year", "SerialNumber")
-
+df = spark.read.csv("hdfs://main:9000/data/caps.csv", inferSchema=True, header=False).toDF("Year", "SerialNumber")
 # Filter and sort the data
 result = df.filter(df["Year"] <= 2023).orderBy("Year", "SerialNumber")
 

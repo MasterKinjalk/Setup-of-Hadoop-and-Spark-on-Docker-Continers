@@ -6,9 +6,8 @@ FROM cs511p1-common
 # DO NOT MODIFY THE ABOVE ##########################################################
 ####################################################################################
 
-ADD config/hdfs-site.xml $HADOOP_HOME/etc/hadoop/hdfs-site.xml
-COPY config/workconf/spark-defaults.conf $SPARK_HOME/conf/spark-defaults.conf
-ADD config/workconf/spark-env.sh /usr/local/spark/conf/spark-env.sh
+ADD ./config/hdfs-site.xml $HADOOP_HOME/etc/hadoop/hdfs-site.xml
+
 
 
 COPY ./setup-worker.sh ./setup-worker.sh

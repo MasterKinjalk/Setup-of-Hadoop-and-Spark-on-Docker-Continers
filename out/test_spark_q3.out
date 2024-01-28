@@ -1,0 +1,29 @@
+ cs511p1_template-main-1 copy resources/fox.txt to cs511p1_template-main-1:/test_fox.txt Copying
+ cs511p1_template-main-1 copy resources/fox.txt to cs511p1_template-main-1:/test_fox.txt Copied
++ hdfs dfs -mkdir -p /test
++ hdfs dfs -put -f /test_fox.txt /test/fox.txt
++ hdfs dfs -cat /test/fox.txt
+The quick brown fox jumps over the lazy dog
++ echo 'sc.textFile("hdfs://main:9000/test/fox.txt").collect()'
++ spark-shell --master spark://main:7077
+Setting default log level to "WARN".
+To adjust logging level use sc.setLogLevel(newLevel). For SparkR, use setLogLevel(newLevel).
+24/01/28 07:08:47 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+Spark context Web UI available at http://main:4040
+Spark context available as 'sc' (master = spark://main:7077, app id = app-20240128070848-0002).
+Spark session available as 'spark'.
+Welcome to
+      ____              __
+     / __/__  ___ _____/ /__
+    _\ \/ _ \/ _ `/ __/  '_/
+   /___/ .__/\_,_/_/ /_/\_\   version 3.4.1
+      /_/
+         
+Using Scala version 2.12.17 (OpenJDK 64-Bit Server VM, Java 1.8.0_342)
+Type in expressions to have them evaluated.
+Type :help for more information.
+
+scala> sc.textFile("hdfs://main:9000/test/fox.txt").collect()
+[Stage 0:>                                                          (0 + 2) / 2][Stage 0:=============================>                             (1 + 1) / 2]                                                                                res0: Array[String] = Array(The quick brown fox jumps over the lazy dog)
+
+scala> :quit

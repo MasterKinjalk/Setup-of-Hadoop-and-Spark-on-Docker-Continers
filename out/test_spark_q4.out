@@ -1,0 +1,464 @@
+ cs511p1_template-main-1 copy resources/spark-terasort-1.2.jar to cs511p1_template-main-1:/spark-terasort-1.2.jar Copying
+ cs511p1_template-main-1 copy resources/spark-terasort-1.2.jar to cs511p1_template-main-1:/spark-terasort-1.2.jar Copied
+24/01/28 07:09:01 INFO SparkContext: Running Spark version 3.4.1
+24/01/28 07:09:01 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+24/01/28 07:09:01 INFO ResourceUtils: ==============================================================
+24/01/28 07:09:01 INFO ResourceUtils: No custom resources configured for spark.driver.
+24/01/28 07:09:01 INFO ResourceUtils: ==============================================================
+24/01/28 07:09:01 INFO SparkContext: Submitted application: TeraGen (100MB)
+24/01/28 07:09:01 INFO ResourceProfile: Default ResourceProfile created, executor resources: Map(memory -> name: memory, amount: 1024, script: , vendor: , offHeap -> name: offHeap, amount: 0, script: , vendor: ), task resources: Map(cpus -> name: cpus, amount: 1.0)
+24/01/28 07:09:01 INFO ResourceProfile: Limiting resource is cpu
+24/01/28 07:09:01 INFO ResourceProfileManager: Added ResourceProfile id: 0
+24/01/28 07:09:01 INFO SecurityManager: Changing view acls to: root
+24/01/28 07:09:01 INFO SecurityManager: Changing modify acls to: root
+24/01/28 07:09:01 INFO SecurityManager: Changing view acls groups to: 
+24/01/28 07:09:01 INFO SecurityManager: Changing modify acls groups to: 
+24/01/28 07:09:01 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users with view permissions: root; groups with view permissions: EMPTY; users with modify permissions: root; groups with modify permissions: EMPTY
+24/01/28 07:09:02 INFO Utils: Successfully started service 'sparkDriver' on port 45897.
+24/01/28 07:09:02 INFO SparkEnv: Registering MapOutputTracker
+24/01/28 07:09:02 INFO SparkEnv: Registering BlockManagerMaster
+24/01/28 07:09:02 INFO BlockManagerMasterEndpoint: Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+24/01/28 07:09:02 INFO BlockManagerMasterEndpoint: BlockManagerMasterEndpoint up
+24/01/28 07:09:02 INFO SparkEnv: Registering BlockManagerMasterHeartbeat
+24/01/28 07:09:02 INFO DiskBlockManager: Created local directory at /tmp/blockmgr-681a7e1d-c692-4e77-a1e0-460b31d86ad7
+24/01/28 07:09:02 INFO MemoryStore: MemoryStore started with capacity 366.3 MiB
+24/01/28 07:09:02 INFO SparkEnv: Registering OutputCommitCoordinator
+24/01/28 07:09:02 INFO JettyUtils: Start Jetty 0.0.0.0:4040 for SparkUI
+24/01/28 07:09:02 INFO Utils: Successfully started service 'SparkUI' on port 4040.
+24/01/28 07:09:02 INFO SparkContext: Added JAR local:///spark-terasort-1.2.jar at file:/spark-terasort-1.2.jar with timestamp 1706425741507
+24/01/28 07:09:02 INFO StandaloneAppClient$ClientEndpoint: Connecting to master spark://main:7077...
+24/01/28 07:09:02 INFO TransportClientFactory: Successfully created connection to main/172.29.0.4:7077 after 38 ms (0 ms spent in bootstraps)
+24/01/28 07:09:02 INFO StandaloneSchedulerBackend: Connected to Spark cluster with app ID app-20240128070902-0003
+24/01/28 07:09:02 INFO StandaloneAppClient$ClientEndpoint: Executor added: app-20240128070902-0003/0 on worker-20240128070625-172.29.0.3-33167 (172.29.0.3:33167) with 16 core(s)
+24/01/28 07:09:02 INFO StandaloneSchedulerBackend: Granted executor ID app-20240128070902-0003/0 on hostPort 172.29.0.3:33167 with 16 core(s), 1024.0 MiB RAM
+24/01/28 07:09:02 INFO StandaloneAppClient$ClientEndpoint: Executor added: app-20240128070902-0003/1 on worker-20240128070629-172.29.0.4-45791 (172.29.0.4:45791) with 16 core(s)
+24/01/28 07:09:02 INFO StandaloneSchedulerBackend: Granted executor ID app-20240128070902-0003/1 on hostPort 172.29.0.4:45791 with 16 core(s), 1024.0 MiB RAM
+24/01/28 07:09:02 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 38473.
+24/01/28 07:09:02 INFO NettyBlockTransferService: Server created on main:38473
+24/01/28 07:09:02 INFO StandaloneAppClient$ClientEndpoint: Executor added: app-20240128070902-0003/2 on worker-20240128070625-172.29.0.2-34637 (172.29.0.2:34637) with 16 core(s)
+24/01/28 07:09:02 INFO StandaloneSchedulerBackend: Granted executor ID app-20240128070902-0003/2 on hostPort 172.29.0.2:34637 with 16 core(s), 1024.0 MiB RAM
+24/01/28 07:09:02 INFO BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+24/01/28 07:09:02 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, main, 38473, None)
+24/01/28 07:09:02 INFO BlockManagerMasterEndpoint: Registering block manager main:38473 with 366.3 MiB RAM, BlockManagerId(driver, main, 38473, None)
+24/01/28 07:09:02 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, main, 38473, None)
+24/01/28 07:09:02 INFO BlockManager: Initialized BlockManager: BlockManagerId(driver, main, 38473, None)
+24/01/28 07:09:02 INFO StandaloneAppClient$ClientEndpoint: Executor updated: app-20240128070902-0003/0 is now RUNNING
+24/01/28 07:09:02 INFO StandaloneAppClient$ClientEndpoint: Executor updated: app-20240128070902-0003/1 is now RUNNING
+24/01/28 07:09:02 INFO StandaloneAppClient$ClientEndpoint: Executor updated: app-20240128070902-0003/2 is now RUNNING
+24/01/28 07:09:03 INFO StandaloneSchedulerBackend: SchedulerBackend is ready for scheduling beginning after reached minRegisteredResourcesRatio: 0.0
+===========================================================================
+===========================================================================
+Input size: 100MB
+Total number of records: 1000000
+Number of output partitions: 2
+Number of records/output partition: 500000
+===========================================================================
+===========================================================================
+24/01/28 07:09:04 INFO FileOutputCommitter: File Output Committer Algorithm version is 1
+24/01/28 07:09:04 INFO FileOutputCommitter: FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+24/01/28 07:09:05 INFO SparkContext: Starting job: runJob at SparkHadoopWriter.scala:83
+24/01/28 07:09:06 INFO DAGScheduler: Got job 0 (runJob at SparkHadoopWriter.scala:83) with 2 output partitions
+24/01/28 07:09:06 INFO DAGScheduler: Final stage: ResultStage 0 (runJob at SparkHadoopWriter.scala:83)
+24/01/28 07:09:06 INFO DAGScheduler: Parents of final stage: List()
+24/01/28 07:09:06 INFO DAGScheduler: Missing parents: List()
+24/01/28 07:09:06 INFO DAGScheduler: Submitting ResultStage 0 (MapPartitionsRDD[1] at mapPartitionsWithIndex at TeraGen.scala:66), which has no missing parents
+24/01/28 07:09:06 INFO MemoryStore: Block broadcast_0 stored as values in memory (estimated size 101.3 KiB, free 366.2 MiB)
+24/01/28 07:09:06 INFO MemoryStore: Block broadcast_0_piece0 stored as bytes in memory (estimated size 36.6 KiB, free 366.2 MiB)
+24/01/28 07:09:06 INFO BlockManagerInfo: Added broadcast_0_piece0 in memory on main:38473 (size: 36.6 KiB, free: 366.3 MiB)
+24/01/28 07:09:06 INFO SparkContext: Created broadcast 0 from broadcast at DAGScheduler.scala:1535
+24/01/28 07:09:06 INFO DAGScheduler: Submitting 2 missing tasks from ResultStage 0 (MapPartitionsRDD[1] at mapPartitionsWithIndex at TeraGen.scala:66) (first 15 tasks are for partitions Vector(0, 1))
+24/01/28 07:09:06 INFO TaskSchedulerImpl: Adding task set 0.0 with 2 tasks resource profile 0
+24/01/28 07:09:07 INFO StandaloneSchedulerBackend$StandaloneDriverEndpoint: Registered executor NettyRpcEndpointRef(spark-client://Executor) (172.29.0.3:59970) with ID 0,  ResourceProfileId 0
+24/01/28 07:09:08 INFO StandaloneSchedulerBackend$StandaloneDriverEndpoint: Registered executor NettyRpcEndpointRef(spark-client://Executor) (172.29.0.4:56120) with ID 1,  ResourceProfileId 0
+24/01/28 07:09:08 INFO BlockManagerMasterEndpoint: Registering block manager 172.29.0.3:42377 with 366.3 MiB RAM, BlockManagerId(0, 172.29.0.3, 42377, None)
+24/01/28 07:09:08 INFO StandaloneSchedulerBackend$StandaloneDriverEndpoint: Registered executor NettyRpcEndpointRef(spark-client://Executor) (172.29.0.2:49510) with ID 2,  ResourceProfileId 0
+24/01/28 07:09:08 INFO BlockManagerMasterEndpoint: Registering block manager 172.29.0.4:46029 with 366.3 MiB RAM, BlockManagerId(1, 172.29.0.4, 46029, None)
+24/01/28 07:09:08 ERROR TaskSchedulerImpl: Lost an executor 0 (already removed): Unable to create executor due to /spark-terasort-1.2.jar
+24/01/28 07:09:08 INFO BlockManagerMasterEndpoint: Registering block manager 172.29.0.2:38161 with 366.3 MiB RAM, BlockManagerId(2, 172.29.0.2, 38161, None)
+24/01/28 07:09:08 INFO StandaloneAppClient$ClientEndpoint: Executor updated: app-20240128070902-0003/0 is now EXITED (Command exited with code 1)
+24/01/28 07:09:08 INFO StandaloneSchedulerBackend: Executor app-20240128070902-0003/0 removed: Command exited with code 1
+24/01/28 07:09:08 INFO BlockManagerMaster: Removal of executor 0 requested
+24/01/28 07:09:08 INFO StandaloneAppClient$ClientEndpoint: Executor added: app-20240128070902-0003/3 on worker-20240128070625-172.29.0.3-33167 (172.29.0.3:33167) with 16 core(s)
+24/01/28 07:09:08 INFO StandaloneSchedulerBackend$StandaloneDriverEndpoint: Asked to remove non-existent executor 0
+24/01/28 07:09:08 INFO StandaloneSchedulerBackend: Granted executor ID app-20240128070902-0003/3 on hostPort 172.29.0.3:33167 with 16 core(s), 1024.0 MiB RAM
+24/01/28 07:09:08 INFO BlockManagerMasterEndpoint: Trying to remove executor 0 from BlockManagerMaster.
+24/01/28 07:09:08 INFO BlockManagerMasterEndpoint: Removing block manager BlockManagerId(0, 172.29.0.3, 42377, None)
+24/01/28 07:09:08 INFO StandaloneAppClient$ClientEndpoint: Executor updated: app-20240128070902-0003/3 is now RUNNING
+24/01/28 07:09:08 INFO TaskSetManager: Starting task 0.0 in stage 0.0 (TID 0) (172.29.0.4, executor 1, partition 0, PROCESS_LOCAL, 7492 bytes) 
+24/01/28 07:09:08 INFO TaskSetManager: Starting task 1.0 in stage 0.0 (TID 1) (172.29.0.4, executor 1, partition 1, PROCESS_LOCAL, 7492 bytes) 
+24/01/28 07:09:08 ERROR TaskSchedulerImpl: Lost an executor 2 (already removed): Unable to create executor due to /spark-terasort-1.2.jar
+24/01/28 07:09:08 INFO StandaloneAppClient$ClientEndpoint: Executor updated: app-20240128070902-0003/2 is now EXITED (Command exited with code 1)
+24/01/28 07:09:08 INFO StandaloneSchedulerBackend: Executor app-20240128070902-0003/2 removed: Command exited with code 1
+24/01/28 07:09:08 INFO BlockManagerMasterEndpoint: Trying to remove executor 2 from BlockManagerMaster.
+24/01/28 07:09:08 INFO BlockManagerMasterEndpoint: Removing block manager BlockManagerId(2, 172.29.0.2, 38161, None)
+24/01/28 07:09:08 INFO BlockManagerMaster: Removal of executor 2 requested
+24/01/28 07:09:08 INFO StandaloneAppClient$ClientEndpoint: Executor added: app-20240128070902-0003/4 on worker-20240128070625-172.29.0.2-34637 (172.29.0.2:34637) with 16 core(s)
+24/01/28 07:09:08 INFO StandaloneSchedulerBackend: Granted executor ID app-20240128070902-0003/4 on hostPort 172.29.0.2:34637 with 16 core(s), 1024.0 MiB RAM
+24/01/28 07:09:08 INFO StandaloneSchedulerBackend$StandaloneDriverEndpoint: Asked to remove non-existent executor 2
+24/01/28 07:09:08 INFO StandaloneAppClient$ClientEndpoint: Executor updated: app-20240128070902-0003/4 is now RUNNING
+24/01/28 07:09:08 INFO BlockManagerInfo: Added broadcast_0_piece0 in memory on 172.29.0.4:46029 (size: 36.6 KiB, free: 366.3 MiB)
+24/01/28 07:09:11 INFO TaskSetManager: Finished task 0.0 in stage 0.0 (TID 0) in 3247 ms on 172.29.0.4 (executor 1) (1/2)
+24/01/28 07:09:11 INFO TaskSetManager: Finished task 1.0 in stage 0.0 (TID 1) in 3186 ms on 172.29.0.4 (executor 1) (2/2)
+24/01/28 07:09:11 INFO TaskSchedulerImpl: Removed TaskSet 0.0, whose tasks have all completed, from pool 
+24/01/28 07:09:11 INFO DAGScheduler: ResultStage 0 (runJob at SparkHadoopWriter.scala:83) finished in 5.554 s
+24/01/28 07:09:11 INFO DAGScheduler: Job 0 is finished. Cancelling potential speculative or zombie tasks for this job
+24/01/28 07:09:11 INFO TaskSchedulerImpl: Killing all running tasks in stage 0: Stage finished
+24/01/28 07:09:11 INFO DAGScheduler: Job 0 finished: runJob at SparkHadoopWriter.scala:83, took 5.676813 s
+24/01/28 07:09:11 INFO SparkHadoopWriter: Start to commit write Job job_202401280709044247187160873206494_0001.
+24/01/28 07:09:11 INFO SparkHadoopWriter: Write Job job_202401280709044247187160873206494_0001 committed. Elapsed time: 138 ms.
+24/01/28 07:09:11 INFO SparkContext: Starting job: count at TeraGen.scala:94
+24/01/28 07:09:11 INFO DAGScheduler: Got job 1 (count at TeraGen.scala:94) with 2 output partitions
+24/01/28 07:09:11 INFO DAGScheduler: Final stage: ResultStage 1 (count at TeraGen.scala:94)
+24/01/28 07:09:11 INFO DAGScheduler: Parents of final stage: List()
+24/01/28 07:09:11 INFO DAGScheduler: Missing parents: List()
+24/01/28 07:09:11 INFO DAGScheduler: Submitting ResultStage 1 (MapPartitionsRDD[1] at mapPartitionsWithIndex at TeraGen.scala:66), which has no missing parents
+24/01/28 07:09:11 INFO MemoryStore: Block broadcast_1 stored as values in memory (estimated size 4.0 KiB, free 366.2 MiB)
+24/01/28 07:09:11 INFO MemoryStore: Block broadcast_1_piece0 stored as bytes in memory (estimated size 2.3 KiB, free 366.2 MiB)
+24/01/28 07:09:11 INFO BlockManagerInfo: Added broadcast_1_piece0 in memory on main:38473 (size: 2.3 KiB, free: 366.3 MiB)
+24/01/28 07:09:11 INFO SparkContext: Created broadcast 1 from broadcast at DAGScheduler.scala:1535
+24/01/28 07:09:11 INFO DAGScheduler: Submitting 2 missing tasks from ResultStage 1 (MapPartitionsRDD[1] at mapPartitionsWithIndex at TeraGen.scala:66) (first 15 tasks are for partitions Vector(0, 1))
+24/01/28 07:09:11 INFO TaskSchedulerImpl: Adding task set 1.0 with 2 tasks resource profile 0
+24/01/28 07:09:11 INFO TaskSetManager: Starting task 0.0 in stage 1.0 (TID 2) (172.29.0.4, executor 1, partition 0, PROCESS_LOCAL, 7492 bytes) 
+24/01/28 07:09:11 INFO TaskSetManager: Starting task 1.0 in stage 1.0 (TID 3) (172.29.0.4, executor 1, partition 1, PROCESS_LOCAL, 7492 bytes) 
+24/01/28 07:09:11 INFO BlockManagerInfo: Added broadcast_1_piece0 in memory on 172.29.0.4:46029 (size: 2.3 KiB, free: 366.3 MiB)
+24/01/28 07:09:12 INFO TaskSetManager: Finished task 0.0 in stage 1.0 (TID 2) in 478 ms on 172.29.0.4 (executor 1) (1/2)
+24/01/28 07:09:12 INFO TaskSetManager: Finished task 1.0 in stage 1.0 (TID 3) in 479 ms on 172.29.0.4 (executor 1) (2/2)
+24/01/28 07:09:12 INFO TaskSchedulerImpl: Removed TaskSet 1.0, whose tasks have all completed, from pool 
+24/01/28 07:09:12 INFO DAGScheduler: ResultStage 1 (count at TeraGen.scala:94) finished in 0.505 s
+24/01/28 07:09:12 INFO DAGScheduler: Job 1 is finished. Cancelling potential speculative or zombie tasks for this job
+24/01/28 07:09:12 INFO TaskSchedulerImpl: Killing all running tasks in stage 1: Stage finished
+24/01/28 07:09:12 INFO DAGScheduler: Job 1 finished: count at TeraGen.scala:94, took 0.512981 s
+Number of records written: 1000000
+24/01/28 07:09:12 INFO SparkContext: Invoking stop() from shutdown hook
+24/01/28 07:09:12 INFO SparkContext: SparkContext is stopping with exitCode 0.
+24/01/28 07:09:12 INFO SparkUI: Stopped Spark web UI at http://main:4040
+24/01/28 07:09:12 INFO StandaloneSchedulerBackend: Shutting down all executors
+24/01/28 07:09:12 INFO StandaloneSchedulerBackend$StandaloneDriverEndpoint: Asking each executor to shut down
+24/01/28 07:09:12 INFO MapOutputTrackerMasterEndpoint: MapOutputTrackerMasterEndpoint stopped!
+24/01/28 07:09:12 INFO MemoryStore: MemoryStore cleared
+24/01/28 07:09:12 INFO BlockManager: BlockManager stopped
+24/01/28 07:09:12 INFO BlockManagerMaster: BlockManagerMaster stopped
+24/01/28 07:09:12 INFO OutputCommitCoordinator$OutputCommitCoordinatorEndpoint: OutputCommitCoordinator stopped!
+24/01/28 07:09:12 INFO SparkContext: Successfully stopped SparkContext
+24/01/28 07:09:12 INFO ShutdownHookManager: Shutdown hook called
+24/01/28 07:09:12 INFO ShutdownHookManager: Deleting directory /tmp/spark-8e7bbe5d-2d0a-4ad9-9c19-a516991e13e7
+24/01/28 07:09:12 INFO ShutdownHookManager: Deleting directory /tmp/spark-1a017c38-6dc5-4a26-9f43-002017f9bb69
+24/01/28 07:09:15 INFO SparkContext: Running Spark version 3.4.1
+24/01/28 07:09:15 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+24/01/28 07:09:15 INFO ResourceUtils: ==============================================================
+24/01/28 07:09:15 INFO ResourceUtils: No custom resources configured for spark.driver.
+24/01/28 07:09:15 INFO ResourceUtils: ==============================================================
+24/01/28 07:09:15 INFO SparkContext: Submitted application: TeraSort
+24/01/28 07:09:15 INFO ResourceProfile: Default ResourceProfile created, executor resources: Map(memory -> name: memory, amount: 1024, script: , vendor: , offHeap -> name: offHeap, amount: 0, script: , vendor: ), task resources: Map(cpus -> name: cpus, amount: 1.0)
+24/01/28 07:09:15 INFO ResourceProfile: Limiting resource is cpu
+24/01/28 07:09:15 INFO ResourceProfileManager: Added ResourceProfile id: 0
+24/01/28 07:09:15 INFO SecurityManager: Changing view acls to: root
+24/01/28 07:09:15 INFO SecurityManager: Changing modify acls to: root
+24/01/28 07:09:15 INFO SecurityManager: Changing view acls groups to: 
+24/01/28 07:09:15 INFO SecurityManager: Changing modify acls groups to: 
+24/01/28 07:09:15 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users with view permissions: root; groups with view permissions: EMPTY; users with modify permissions: root; groups with modify permissions: EMPTY
+24/01/28 07:09:15 INFO Utils: Successfully started service 'sparkDriver' on port 39449.
+24/01/28 07:09:15 INFO SparkEnv: Registering MapOutputTracker
+24/01/28 07:09:15 INFO SparkEnv: Registering BlockManagerMaster
+24/01/28 07:09:15 INFO BlockManagerMasterEndpoint: Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+24/01/28 07:09:15 INFO BlockManagerMasterEndpoint: BlockManagerMasterEndpoint up
+24/01/28 07:09:15 INFO SparkEnv: Registering BlockManagerMasterHeartbeat
+24/01/28 07:09:15 INFO DiskBlockManager: Created local directory at /tmp/blockmgr-cdbce135-6e58-4c50-8d1f-989b8687b37c
+24/01/28 07:09:15 INFO MemoryStore: MemoryStore started with capacity 366.3 MiB
+24/01/28 07:09:15 INFO SparkEnv: Registering OutputCommitCoordinator
+24/01/28 07:09:16 INFO JettyUtils: Start Jetty 0.0.0.0:4040 for SparkUI
+24/01/28 07:09:16 INFO Utils: Successfully started service 'SparkUI' on port 4040.
+24/01/28 07:09:16 INFO SparkContext: Added JAR local:///spark-terasort-1.2.jar at file:/spark-terasort-1.2.jar with timestamp 1706425755054
+24/01/28 07:09:16 INFO StandaloneAppClient$ClientEndpoint: Connecting to master spark://main:7077...
+24/01/28 07:09:16 INFO TransportClientFactory: Successfully created connection to main/172.29.0.4:7077 after 40 ms (0 ms spent in bootstraps)
+24/01/28 07:09:16 INFO StandaloneSchedulerBackend: Connected to Spark cluster with app ID app-20240128070916-0004
+24/01/28 07:09:16 INFO StandaloneAppClient$ClientEndpoint: Executor added: app-20240128070916-0004/0 on worker-20240128070625-172.29.0.3-33167 (172.29.0.3:33167) with 16 core(s)
+24/01/28 07:09:16 INFO StandaloneSchedulerBackend: Granted executor ID app-20240128070916-0004/0 on hostPort 172.29.0.3:33167 with 16 core(s), 1024.0 MiB RAM
+24/01/28 07:09:16 INFO StandaloneAppClient$ClientEndpoint: Executor added: app-20240128070916-0004/1 on worker-20240128070629-172.29.0.4-45791 (172.29.0.4:45791) with 16 core(s)
+24/01/28 07:09:16 INFO StandaloneSchedulerBackend: Granted executor ID app-20240128070916-0004/1 on hostPort 172.29.0.4:45791 with 16 core(s), 1024.0 MiB RAM
+24/01/28 07:09:16 INFO StandaloneAppClient$ClientEndpoint: Executor added: app-20240128070916-0004/2 on worker-20240128070625-172.29.0.2-34637 (172.29.0.2:34637) with 16 core(s)
+24/01/28 07:09:16 INFO StandaloneSchedulerBackend: Granted executor ID app-20240128070916-0004/2 on hostPort 172.29.0.2:34637 with 16 core(s), 1024.0 MiB RAM
+24/01/28 07:09:16 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 35199.
+24/01/28 07:09:16 INFO NettyBlockTransferService: Server created on main:35199
+24/01/28 07:09:16 INFO BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+24/01/28 07:09:16 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, main, 35199, None)
+24/01/28 07:09:16 INFO BlockManagerMasterEndpoint: Registering block manager main:35199 with 366.3 MiB RAM, BlockManagerId(driver, main, 35199, None)
+24/01/28 07:09:16 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, main, 35199, None)
+24/01/28 07:09:16 INFO BlockManager: Initialized BlockManager: BlockManagerId(driver, main, 35199, None)
+24/01/28 07:09:16 INFO StandaloneAppClient$ClientEndpoint: Executor updated: app-20240128070916-0004/0 is now RUNNING
+24/01/28 07:09:16 INFO StandaloneAppClient$ClientEndpoint: Executor updated: app-20240128070916-0004/1 is now RUNNING
+24/01/28 07:09:16 INFO StandaloneAppClient$ClientEndpoint: Executor updated: app-20240128070916-0004/2 is now RUNNING
+24/01/28 07:09:17 INFO StandaloneSchedulerBackend: SchedulerBackend is ready for scheduling beginning after reached minRegisteredResourcesRatio: 0.0
+24/01/28 07:09:19 INFO MemoryStore: Block broadcast_0 stored as values in memory (estimated size 343.5 KiB, free 366.0 MiB)
+24/01/28 07:09:19 INFO MemoryStore: Block broadcast_0_piece0 stored as bytes in memory (estimated size 32.6 KiB, free 365.9 MiB)
+24/01/28 07:09:19 INFO BlockManagerInfo: Added broadcast_0_piece0 in memory on main:35199 (size: 32.6 KiB, free: 366.3 MiB)
+24/01/28 07:09:19 INFO SparkContext: Created broadcast 0 from newAPIHadoopFile at TeraSort.scala:60
+24/01/28 07:09:20 INFO FileInputFormat: Total input files to process : 2
+24/01/28 07:09:20 INFO FileOutputCommitter: File Output Committer Algorithm version is 1
+24/01/28 07:09:20 INFO FileOutputCommitter: FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+24/01/28 07:09:20 INFO SparkContext: Starting job: runJob at SparkHadoopWriter.scala:83
+24/01/28 07:09:20 INFO DAGScheduler: Registering RDD 0 (newAPIHadoopFile at TeraSort.scala:60) as input to shuffle 0
+24/01/28 07:09:20 INFO DAGScheduler: Got job 0 (runJob at SparkHadoopWriter.scala:83) with 2 output partitions
+24/01/28 07:09:20 INFO DAGScheduler: Final stage: ResultStage 1 (runJob at SparkHadoopWriter.scala:83)
+24/01/28 07:09:20 INFO DAGScheduler: Parents of final stage: List(ShuffleMapStage 0)
+24/01/28 07:09:20 INFO DAGScheduler: Missing parents: List(ShuffleMapStage 0)
+24/01/28 07:09:20 INFO DAGScheduler: Submitting ShuffleMapStage 0 (hdfs://main:9000/spark/tera-in NewHadoopRDD[0] at newAPIHadoopFile at TeraSort.scala:60), which has no missing parents
+24/01/28 07:09:20 INFO MemoryStore: Block broadcast_1 stored as values in memory (estimated size 4.6 KiB, free 365.9 MiB)
+24/01/28 07:09:20 INFO MemoryStore: Block broadcast_1_piece0 stored as bytes in memory (estimated size 2.9 KiB, free 365.9 MiB)
+24/01/28 07:09:20 INFO BlockManagerInfo: Added broadcast_1_piece0 in memory on main:35199 (size: 2.9 KiB, free: 366.3 MiB)
+24/01/28 07:09:20 INFO SparkContext: Created broadcast 1 from broadcast at DAGScheduler.scala:1535
+24/01/28 07:09:20 INFO DAGScheduler: Submitting 2 missing tasks from ShuffleMapStage 0 (hdfs://main:9000/spark/tera-in NewHadoopRDD[0] at newAPIHadoopFile at TeraSort.scala:60) (first 15 tasks are for partitions Vector(0, 1))
+24/01/28 07:09:20 INFO TaskSchedulerImpl: Adding task set 0.0 with 2 tasks resource profile 0
+24/01/28 07:09:21 INFO StandaloneSchedulerBackend$StandaloneDriverEndpoint: Registered executor NettyRpcEndpointRef(spark-client://Executor) (172.29.0.2:35568) with ID 2,  ResourceProfileId 0
+24/01/28 07:09:21 INFO StandaloneSchedulerBackend$StandaloneDriverEndpoint: Registered executor NettyRpcEndpointRef(spark-client://Executor) (172.29.0.4:60406) with ID 1,  ResourceProfileId 0
+24/01/28 07:09:21 INFO StandaloneSchedulerBackend$StandaloneDriverEndpoint: Registered executor NettyRpcEndpointRef(spark-client://Executor) (172.29.0.3:43850) with ID 0,  ResourceProfileId 0
+24/01/28 07:09:21 INFO BlockManagerMasterEndpoint: Registering block manager 172.29.0.2:34035 with 366.3 MiB RAM, BlockManagerId(2, 172.29.0.2, 34035, None)
+24/01/28 07:09:21 INFO BlockManagerMasterEndpoint: Registering block manager 172.29.0.4:42835 with 366.3 MiB RAM, BlockManagerId(1, 172.29.0.4, 42835, None)
+24/01/28 07:09:21 INFO BlockManagerMasterEndpoint: Registering block manager 172.29.0.3:43285 with 366.3 MiB RAM, BlockManagerId(0, 172.29.0.3, 43285, None)
+24/01/28 07:09:21 ERROR TaskSchedulerImpl: Lost an executor 2 (already removed): Unable to create executor due to /spark-terasort-1.2.jar
+24/01/28 07:09:21 ERROR TaskSchedulerImpl: Lost an executor 0 (already removed): Unable to create executor due to /spark-terasort-1.2.jar
+24/01/28 07:09:21 INFO TaskSetManager: Starting task 0.0 in stage 0.0 (TID 0) (172.29.0.4, executor 1, partition 0, ANY, 7457 bytes) 
+24/01/28 07:09:21 INFO TaskSetManager: Starting task 1.0 in stage 0.0 (TID 1) (172.29.0.4, executor 1, partition 1, ANY, 7457 bytes) 
+24/01/28 07:09:21 INFO StandaloneAppClient$ClientEndpoint: Executor updated: app-20240128070916-0004/2 is now EXITED (Command exited with code 1)
+24/01/28 07:09:21 INFO StandaloneSchedulerBackend: Executor app-20240128070916-0004/2 removed: Command exited with code 1
+24/01/28 07:09:21 INFO StandaloneAppClient$ClientEndpoint: Executor added: app-20240128070916-0004/3 on worker-20240128070625-172.29.0.2-34637 (172.29.0.2:34637) with 16 core(s)
+24/01/28 07:09:21 INFO StandaloneSchedulerBackend: Granted executor ID app-20240128070916-0004/3 on hostPort 172.29.0.2:34637 with 16 core(s), 1024.0 MiB RAM
+24/01/28 07:09:21 INFO BlockManagerMaster: Removal of executor 2 requested
+24/01/28 07:09:21 INFO StandaloneSchedulerBackend$StandaloneDriverEndpoint: Asked to remove non-existent executor 2
+24/01/28 07:09:21 INFO BlockManagerMasterEndpoint: Trying to remove executor 2 from BlockManagerMaster.
+24/01/28 07:09:21 INFO BlockManagerMasterEndpoint: Removing block manager BlockManagerId(2, 172.29.0.2, 34035, None)
+24/01/28 07:09:21 INFO StandaloneAppClient$ClientEndpoint: Executor updated: app-20240128070916-0004/3 is now RUNNING
+24/01/28 07:09:21 INFO StandaloneAppClient$ClientEndpoint: Executor updated: app-20240128070916-0004/0 is now EXITED (Command exited with code 1)
+24/01/28 07:09:21 INFO StandaloneSchedulerBackend: Executor app-20240128070916-0004/0 removed: Command exited with code 1
+24/01/28 07:09:21 INFO BlockManagerMaster: Removal of executor 0 requested
+24/01/28 07:09:21 INFO BlockManagerMasterEndpoint: Trying to remove executor 0 from BlockManagerMaster.
+24/01/28 07:09:21 INFO StandaloneSchedulerBackend$StandaloneDriverEndpoint: Asked to remove non-existent executor 0
+24/01/28 07:09:21 INFO BlockManagerMasterEndpoint: Removing block manager BlockManagerId(0, 172.29.0.3, 43285, None)
+24/01/28 07:09:21 INFO StandaloneAppClient$ClientEndpoint: Executor added: app-20240128070916-0004/4 on worker-20240128070625-172.29.0.3-33167 (172.29.0.3:33167) with 16 core(s)
+24/01/28 07:09:21 INFO StandaloneSchedulerBackend: Granted executor ID app-20240128070916-0004/4 on hostPort 172.29.0.3:33167 with 16 core(s), 1024.0 MiB RAM
+24/01/28 07:09:21 INFO StandaloneAppClient$ClientEndpoint: Executor updated: app-20240128070916-0004/4 is now RUNNING
+24/01/28 07:09:22 INFO BlockManagerInfo: Added broadcast_1_piece0 in memory on 172.29.0.4:42835 (size: 2.9 KiB, free: 366.3 MiB)
+24/01/28 07:09:23 INFO BlockManagerInfo: Added broadcast_0_piece0 in memory on 172.29.0.4:42835 (size: 32.6 KiB, free: 366.3 MiB)
+24/01/28 07:09:25 INFO TaskSetManager: Finished task 1.0 in stage 0.0 (TID 1) in 3266 ms on 172.29.0.4 (executor 1) (1/2)
+24/01/28 07:09:25 INFO TaskSetManager: Finished task 0.0 in stage 0.0 (TID 0) in 3321 ms on 172.29.0.4 (executor 1) (2/2)
+24/01/28 07:09:25 INFO TaskSchedulerImpl: Removed TaskSet 0.0, whose tasks have all completed, from pool 
+24/01/28 07:09:25 INFO DAGScheduler: ShuffleMapStage 0 (newAPIHadoopFile at TeraSort.scala:60) finished in 4.412 s
+24/01/28 07:09:25 INFO DAGScheduler: looking for newly runnable stages
+24/01/28 07:09:25 INFO DAGScheduler: running: Set()
+24/01/28 07:09:25 INFO DAGScheduler: waiting: Set(ResultStage 1)
+24/01/28 07:09:25 INFO DAGScheduler: failed: Set()
+24/01/28 07:09:25 INFO DAGScheduler: Submitting ResultStage 1 (ShuffledRDD[1] at repartitionAndSortWithinPartitions at TeraSort.scala:63), which has no missing parents
+24/01/28 07:09:25 INFO MemoryStore: Block broadcast_2 stored as values in memory (estimated size 101.9 KiB, free 365.8 MiB)
+24/01/28 07:09:25 INFO MemoryStore: Block broadcast_2_piece0 stored as bytes in memory (estimated size 37.0 KiB, free 365.8 MiB)
+24/01/28 07:09:25 INFO BlockManagerInfo: Added broadcast_2_piece0 in memory on main:35199 (size: 37.0 KiB, free: 366.2 MiB)
+24/01/28 07:09:25 INFO SparkContext: Created broadcast 2 from broadcast at DAGScheduler.scala:1535
+24/01/28 07:09:25 INFO DAGScheduler: Submitting 2 missing tasks from ResultStage 1 (ShuffledRDD[1] at repartitionAndSortWithinPartitions at TeraSort.scala:63) (first 15 tasks are for partitions Vector(0, 1))
+24/01/28 07:09:25 INFO TaskSchedulerImpl: Adding task set 1.0 with 2 tasks resource profile 0
+24/01/28 07:09:25 INFO TaskSetManager: Starting task 0.0 in stage 1.0 (TID 2) (172.29.0.4, executor 1, partition 0, NODE_LOCAL, 7185 bytes) 
+24/01/28 07:09:25 INFO TaskSetManager: Starting task 1.0 in stage 1.0 (TID 3) (172.29.0.4, executor 1, partition 1, NODE_LOCAL, 7185 bytes) 
+24/01/28 07:09:25 INFO BlockManagerInfo: Added broadcast_2_piece0 in memory on 172.29.0.4:42835 (size: 37.0 KiB, free: 366.2 MiB)
+24/01/28 07:09:25 INFO MapOutputTrackerMasterEndpoint: Asked to send map output locations for shuffle 0 to 172.29.0.4:60406
+24/01/28 07:09:25 INFO StandaloneSchedulerBackend$StandaloneDriverEndpoint: Registered executor NettyRpcEndpointRef(spark-client://Executor) (172.29.0.2:35598) with ID 3,  ResourceProfileId 0
+24/01/28 07:09:25 INFO StandaloneSchedulerBackend$StandaloneDriverEndpoint: Registered executor NettyRpcEndpointRef(spark-client://Executor) (172.29.0.3:43862) with ID 4,  ResourceProfileId 0
+24/01/28 07:09:26 INFO BlockManagerMasterEndpoint: Registering block manager 172.29.0.2:46677 with 366.3 MiB RAM, BlockManagerId(3, 172.29.0.2, 46677, None)
+24/01/28 07:09:26 INFO BlockManagerMasterEndpoint: Registering block manager 172.29.0.3:45501 with 366.3 MiB RAM, BlockManagerId(4, 172.29.0.3, 45501, None)
+24/01/28 07:09:26 ERROR TaskSchedulerImpl: Lost executor 3 on 172.29.0.2: Unable to create executor due to /spark-terasort-1.2.jar
+24/01/28 07:09:26 INFO DAGScheduler: Executor lost: 3 (epoch 1)
+24/01/28 07:09:26 INFO BlockManagerMasterEndpoint: Trying to remove executor 3 from BlockManagerMaster.
+24/01/28 07:09:26 INFO BlockManagerMasterEndpoint: Removing block manager BlockManagerId(3, 172.29.0.2, 46677, None)
+24/01/28 07:09:26 INFO BlockManagerMaster: Removed 3 successfully in removeExecutor
+24/01/28 07:09:26 INFO DAGScheduler: Shuffle files lost for executor: 3 (epoch 1)
+24/01/28 07:09:26 ERROR TaskSchedulerImpl: Lost executor 4 on 172.29.0.3: Unable to create executor due to /spark-terasort-1.2.jar
+24/01/28 07:09:26 INFO DAGScheduler: Executor lost: 4 (epoch 2)
+24/01/28 07:09:26 INFO BlockManagerMasterEndpoint: Trying to remove executor 4 from BlockManagerMaster.
+24/01/28 07:09:26 INFO BlockManagerMasterEndpoint: Removing block manager BlockManagerId(4, 172.29.0.3, 45501, None)
+24/01/28 07:09:26 INFO BlockManagerMaster: Removed 4 successfully in removeExecutor
+24/01/28 07:09:26 INFO DAGScheduler: Shuffle files lost for executor: 4 (epoch 2)
+24/01/28 07:09:26 INFO StandaloneAppClient$ClientEndpoint: Executor updated: app-20240128070916-0004/4 is now EXITED (Command exited with code 1)
+24/01/28 07:09:26 INFO StandaloneSchedulerBackend: Executor app-20240128070916-0004/4 removed: Command exited with code 1
+24/01/28 07:09:26 INFO BlockManagerMasterEndpoint: Trying to remove executor 4 from BlockManagerMaster.
+24/01/28 07:09:26 INFO BlockManagerMaster: Removal of executor 4 requested
+24/01/28 07:09:26 INFO StandaloneSchedulerBackend$StandaloneDriverEndpoint: Asked to remove non-existent executor 4
+24/01/28 07:09:26 INFO StandaloneAppClient$ClientEndpoint: Executor added: app-20240128070916-0004/5 on worker-20240128070625-172.29.0.3-33167 (172.29.0.3:33167) with 16 core(s)
+24/01/28 07:09:26 INFO StandaloneSchedulerBackend: Granted executor ID app-20240128070916-0004/5 on hostPort 172.29.0.3:33167 with 16 core(s), 1024.0 MiB RAM
+24/01/28 07:09:26 INFO StandaloneAppClient$ClientEndpoint: Executor updated: app-20240128070916-0004/3 is now EXITED (Command exited with code 1)
+24/01/28 07:09:26 INFO StandaloneSchedulerBackend: Executor app-20240128070916-0004/3 removed: Command exited with code 1
+24/01/28 07:09:26 INFO BlockManagerMasterEndpoint: Trying to remove executor 3 from BlockManagerMaster.
+24/01/28 07:09:26 INFO BlockManagerMaster: Removal of executor 3 requested
+24/01/28 07:09:26 INFO StandaloneSchedulerBackend$StandaloneDriverEndpoint: Asked to remove non-existent executor 3
+24/01/28 07:09:26 INFO StandaloneAppClient$ClientEndpoint: Executor added: app-20240128070916-0004/6 on worker-20240128070625-172.29.0.2-34637 (172.29.0.2:34637) with 16 core(s)
+24/01/28 07:09:26 INFO StandaloneSchedulerBackend: Granted executor ID app-20240128070916-0004/6 on hostPort 172.29.0.2:34637 with 16 core(s), 1024.0 MiB RAM
+24/01/28 07:09:26 INFO StandaloneAppClient$ClientEndpoint: Executor updated: app-20240128070916-0004/5 is now RUNNING
+24/01/28 07:09:26 INFO StandaloneAppClient$ClientEndpoint: Executor updated: app-20240128070916-0004/6 is now RUNNING
+24/01/28 07:09:28 INFO TaskSetManager: Finished task 1.0 in stage 1.0 (TID 3) in 3533 ms on 172.29.0.4 (executor 1) (1/2)
+24/01/28 07:09:28 INFO TaskSetManager: Finished task 0.0 in stage 1.0 (TID 2) in 3539 ms on 172.29.0.4 (executor 1) (2/2)
+24/01/28 07:09:28 INFO TaskSchedulerImpl: Removed TaskSet 1.0, whose tasks have all completed, from pool 
+24/01/28 07:09:28 INFO DAGScheduler: ResultStage 1 (runJob at SparkHadoopWriter.scala:83) finished in 3.581 s
+24/01/28 07:09:28 INFO DAGScheduler: Job 0 is finished. Cancelling potential speculative or zombie tasks for this job
+24/01/28 07:09:28 INFO TaskSchedulerImpl: Killing all running tasks in stage 1: Stage finished
+24/01/28 07:09:28 INFO DAGScheduler: Job 0 finished: runJob at SparkHadoopWriter.scala:83, took 8.230823 s
+24/01/28 07:09:28 INFO SparkHadoopWriter: Start to commit write Job job_202401280709201942809152900866847_0001.
+24/01/28 07:09:28 INFO SparkHadoopWriter: Write Job job_202401280709201942809152900866847_0001 committed. Elapsed time: 102 ms.
+==== TeraSort took 8.877s ====
+24/01/28 07:09:28 INFO SparkContext: SparkContext is stopping with exitCode 0.
+24/01/28 07:09:28 INFO SparkUI: Stopped Spark web UI at http://main:4040
+24/01/28 07:09:28 INFO StandaloneSchedulerBackend: Shutting down all executors
+24/01/28 07:09:28 INFO StandaloneSchedulerBackend$StandaloneDriverEndpoint: Asking each executor to shut down
+24/01/28 07:09:28 INFO MapOutputTrackerMasterEndpoint: MapOutputTrackerMasterEndpoint stopped!
+24/01/28 07:09:28 INFO MemoryStore: MemoryStore cleared
+24/01/28 07:09:28 INFO BlockManager: BlockManager stopped
+24/01/28 07:09:28 INFO BlockManagerMaster: BlockManagerMaster stopped
+24/01/28 07:09:28 INFO OutputCommitCoordinator$OutputCommitCoordinatorEndpoint: OutputCommitCoordinator stopped!
+24/01/28 07:09:28 INFO SparkContext: Successfully stopped SparkContext
+24/01/28 07:09:28 INFO ShutdownHookManager: Shutdown hook called
+24/01/28 07:09:28 INFO ShutdownHookManager: Deleting directory /tmp/spark-5795dd82-9fae-469e-8dd2-7caa75a4a9e0
+24/01/28 07:09:28 INFO ShutdownHookManager: Deleting directory /tmp/spark-9ce6bde9-366a-4528-8b8c-f26ae47536fe
+24/01/28 07:09:31 INFO SparkContext: Running Spark version 3.4.1
+24/01/28 07:09:31 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+24/01/28 07:09:31 INFO ResourceUtils: ==============================================================
+24/01/28 07:09:31 INFO ResourceUtils: No custom resources configured for spark.driver.
+24/01/28 07:09:31 INFO ResourceUtils: ==============================================================
+24/01/28 07:09:31 INFO SparkContext: Submitted application: TeraValidate
+24/01/28 07:09:31 INFO ResourceProfile: Default ResourceProfile created, executor resources: Map(memory -> name: memory, amount: 1024, script: , vendor: , offHeap -> name: offHeap, amount: 0, script: , vendor: ), task resources: Map(cpus -> name: cpus, amount: 1.0)
+24/01/28 07:09:31 INFO ResourceProfile: Limiting resource is cpu
+24/01/28 07:09:31 INFO ResourceProfileManager: Added ResourceProfile id: 0
+24/01/28 07:09:31 INFO SecurityManager: Changing view acls to: root
+24/01/28 07:09:31 INFO SecurityManager: Changing modify acls to: root
+24/01/28 07:09:31 INFO SecurityManager: Changing view acls groups to: 
+24/01/28 07:09:31 INFO SecurityManager: Changing modify acls groups to: 
+24/01/28 07:09:31 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users with view permissions: root; groups with view permissions: EMPTY; users with modify permissions: root; groups with modify permissions: EMPTY
+24/01/28 07:09:32 INFO Utils: Successfully started service 'sparkDriver' on port 42089.
+24/01/28 07:09:32 INFO SparkEnv: Registering MapOutputTracker
+24/01/28 07:09:32 INFO SparkEnv: Registering BlockManagerMaster
+24/01/28 07:09:32 INFO BlockManagerMasterEndpoint: Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+24/01/28 07:09:32 INFO BlockManagerMasterEndpoint: BlockManagerMasterEndpoint up
+24/01/28 07:09:32 INFO SparkEnv: Registering BlockManagerMasterHeartbeat
+24/01/28 07:09:32 INFO DiskBlockManager: Created local directory at /tmp/blockmgr-09f97a19-72b3-4753-9b92-52198e0f8c0c
+24/01/28 07:09:32 INFO MemoryStore: MemoryStore started with capacity 366.3 MiB
+24/01/28 07:09:32 INFO SparkEnv: Registering OutputCommitCoordinator
+24/01/28 07:09:32 INFO JettyUtils: Start Jetty 0.0.0.0:4040 for SparkUI
+24/01/28 07:09:32 INFO Utils: Successfully started service 'SparkUI' on port 4040.
+24/01/28 07:09:32 INFO SparkContext: Added JAR local:///spark-terasort-1.2.jar at file:/spark-terasort-1.2.jar with timestamp 1706425771707
+24/01/28 07:09:32 INFO StandaloneAppClient$ClientEndpoint: Connecting to master spark://main:7077...
+24/01/28 07:09:32 INFO TransportClientFactory: Successfully created connection to main/172.29.0.4:7077 after 39 ms (0 ms spent in bootstraps)
+24/01/28 07:09:33 INFO StandaloneSchedulerBackend: Connected to Spark cluster with app ID app-20240128070933-0005
+24/01/28 07:09:33 INFO StandaloneAppClient$ClientEndpoint: Executor added: app-20240128070933-0005/0 on worker-20240128070625-172.29.0.3-33167 (172.29.0.3:33167) with 16 core(s)
+24/01/28 07:09:33 INFO StandaloneSchedulerBackend: Granted executor ID app-20240128070933-0005/0 on hostPort 172.29.0.3:33167 with 16 core(s), 1024.0 MiB RAM
+24/01/28 07:09:33 INFO StandaloneAppClient$ClientEndpoint: Executor added: app-20240128070933-0005/1 on worker-20240128070629-172.29.0.4-45791 (172.29.0.4:45791) with 16 core(s)
+24/01/28 07:09:33 INFO StandaloneSchedulerBackend: Granted executor ID app-20240128070933-0005/1 on hostPort 172.29.0.4:45791 with 16 core(s), 1024.0 MiB RAM
+24/01/28 07:09:33 INFO StandaloneAppClient$ClientEndpoint: Executor added: app-20240128070933-0005/2 on worker-20240128070625-172.29.0.2-34637 (172.29.0.2:34637) with 16 core(s)
+24/01/28 07:09:33 INFO StandaloneSchedulerBackend: Granted executor ID app-20240128070933-0005/2 on hostPort 172.29.0.2:34637 with 16 core(s), 1024.0 MiB RAM
+24/01/28 07:09:33 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 32943.
+24/01/28 07:09:33 INFO NettyBlockTransferService: Server created on main:32943
+24/01/28 07:09:33 INFO BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+24/01/28 07:09:33 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, main, 32943, None)
+24/01/28 07:09:33 INFO BlockManagerMasterEndpoint: Registering block manager main:32943 with 366.3 MiB RAM, BlockManagerId(driver, main, 32943, None)
+24/01/28 07:09:33 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, main, 32943, None)
+24/01/28 07:09:33 INFO BlockManager: Initialized BlockManager: BlockManagerId(driver, main, 32943, None)
+24/01/28 07:09:33 INFO StandaloneAppClient$ClientEndpoint: Executor updated: app-20240128070933-0005/0 is now RUNNING
+24/01/28 07:09:33 INFO StandaloneAppClient$ClientEndpoint: Executor updated: app-20240128070933-0005/2 is now RUNNING
+24/01/28 07:09:33 INFO StandaloneAppClient$ClientEndpoint: Executor updated: app-20240128070933-0005/1 is now RUNNING
+24/01/28 07:09:33 INFO StandaloneSchedulerBackend: SchedulerBackend is ready for scheduling beginning after reached minRegisteredResourcesRatio: 0.0
+24/01/28 07:09:35 INFO MemoryStore: Block broadcast_0 stored as values in memory (estimated size 343.5 KiB, free 366.0 MiB)
+24/01/28 07:09:36 INFO MemoryStore: Block broadcast_0_piece0 stored as bytes in memory (estimated size 32.7 KiB, free 365.9 MiB)
+24/01/28 07:09:36 INFO BlockManagerInfo: Added broadcast_0_piece0 in memory on main:32943 (size: 32.7 KiB, free: 366.3 MiB)
+24/01/28 07:09:36 INFO SparkContext: Created broadcast 0 from newAPIHadoopFile at TeraValidate.scala:60
+24/01/28 07:09:37 INFO FileInputFormat: Total input files to process : 2
+24/01/28 07:09:37 INFO SparkContext: Starting job: collect at TeraValidate.scala:98
+24/01/28 07:09:37 INFO DAGScheduler: Got job 0 (collect at TeraValidate.scala:98) with 2 output partitions
+24/01/28 07:09:37 INFO DAGScheduler: Final stage: ResultStage 0 (collect at TeraValidate.scala:98)
+24/01/28 07:09:37 INFO DAGScheduler: Parents of final stage: List()
+24/01/28 07:09:37 INFO DAGScheduler: Missing parents: List()
+24/01/28 07:09:37 INFO DAGScheduler: Submitting ResultStage 0 (MapPartitionsRDD[1] at mapPartitions at TeraValidate.scala:66), which has no missing parents
+24/01/28 07:09:37 INFO MemoryStore: Block broadcast_1 stored as values in memory (estimated size 4.7 KiB, free 365.9 MiB)
+24/01/28 07:09:37 INFO MemoryStore: Block broadcast_1_piece0 stored as bytes in memory (estimated size 2.6 KiB, free 365.9 MiB)
+24/01/28 07:09:37 INFO BlockManagerInfo: Added broadcast_1_piece0 in memory on main:32943 (size: 2.6 KiB, free: 366.3 MiB)
+24/01/28 07:09:37 INFO SparkContext: Created broadcast 1 from broadcast at DAGScheduler.scala:1535
+24/01/28 07:09:37 INFO DAGScheduler: Submitting 2 missing tasks from ResultStage 0 (MapPartitionsRDD[1] at mapPartitions at TeraValidate.scala:66) (first 15 tasks are for partitions Vector(0, 1))
+24/01/28 07:09:37 INFO TaskSchedulerImpl: Adding task set 0.0 with 2 tasks resource profile 0
+24/01/28 07:09:38 INFO StandaloneSchedulerBackend$StandaloneDriverEndpoint: Registered executor NettyRpcEndpointRef(spark-client://Executor) (172.29.0.4:44064) with ID 1,  ResourceProfileId 0
+24/01/28 07:09:38 INFO StandaloneSchedulerBackend$StandaloneDriverEndpoint: Registered executor NettyRpcEndpointRef(spark-client://Executor) (172.29.0.2:48308) with ID 2,  ResourceProfileId 0
+24/01/28 07:09:38 INFO BlockManagerMasterEndpoint: Registering block manager 172.29.0.4:42645 with 366.3 MiB RAM, BlockManagerId(1, 172.29.0.4, 42645, None)
+24/01/28 07:09:38 INFO StandaloneSchedulerBackend$StandaloneDriverEndpoint: Registered executor NettyRpcEndpointRef(spark-client://Executor) (172.29.0.3:49914) with ID 0,  ResourceProfileId 0
+24/01/28 07:09:38 INFO BlockManagerMasterEndpoint: Registering block manager 172.29.0.2:34009 with 366.3 MiB RAM, BlockManagerId(2, 172.29.0.2, 34009, None)
+24/01/28 07:09:38 INFO BlockManagerMasterEndpoint: Registering block manager 172.29.0.3:35725 with 366.3 MiB RAM, BlockManagerId(0, 172.29.0.3, 35725, None)
+24/01/28 07:09:38 INFO TaskSetManager: Starting task 0.0 in stage 0.0 (TID 0) (172.29.0.4, executor 1, partition 0, ANY, 7469 bytes) 
+24/01/28 07:09:38 INFO TaskSetManager: Starting task 1.0 in stage 0.0 (TID 1) (172.29.0.4, executor 1, partition 1, ANY, 7469 bytes) 
+24/01/28 07:09:38 ERROR TaskSchedulerImpl: Lost an executor 2 (already removed): Unable to create executor due to /spark-terasort-1.2.jar
+24/01/28 07:09:38 ERROR TaskSchedulerImpl: Lost an executor 0 (already removed): Unable to create executor due to /spark-terasort-1.2.jar
+24/01/28 07:09:38 INFO StandaloneAppClient$ClientEndpoint: Executor updated: app-20240128070933-0005/2 is now EXITED (Command exited with code 1)
+24/01/28 07:09:38 INFO StandaloneSchedulerBackend: Executor app-20240128070933-0005/2 removed: Command exited with code 1
+24/01/28 07:09:38 INFO StandaloneAppClient$ClientEndpoint: Executor added: app-20240128070933-0005/3 on worker-20240128070625-172.29.0.2-34637 (172.29.0.2:34637) with 16 core(s)
+24/01/28 07:09:38 INFO StandaloneSchedulerBackend: Granted executor ID app-20240128070933-0005/3 on hostPort 172.29.0.2:34637 with 16 core(s), 1024.0 MiB RAM
+24/01/28 07:09:38 INFO BlockManagerMaster: Removal of executor 2 requested
+24/01/28 07:09:38 INFO StandaloneSchedulerBackend$StandaloneDriverEndpoint: Asked to remove non-existent executor 2
+24/01/28 07:09:38 INFO BlockManagerMasterEndpoint: Trying to remove executor 2 from BlockManagerMaster.
+24/01/28 07:09:38 INFO BlockManagerMasterEndpoint: Removing block manager BlockManagerId(2, 172.29.0.2, 34009, None)
+24/01/28 07:09:38 INFO StandaloneAppClient$ClientEndpoint: Executor updated: app-20240128070933-0005/3 is now RUNNING
+24/01/28 07:09:38 INFO StandaloneAppClient$ClientEndpoint: Executor updated: app-20240128070933-0005/0 is now EXITED (Command exited with code 1)
+24/01/28 07:09:38 INFO StandaloneSchedulerBackend: Executor app-20240128070933-0005/0 removed: Command exited with code 1
+24/01/28 07:09:38 INFO BlockManagerMasterEndpoint: Trying to remove executor 0 from BlockManagerMaster.
+24/01/28 07:09:38 INFO StandaloneAppClient$ClientEndpoint: Executor added: app-20240128070933-0005/4 on worker-20240128070625-172.29.0.3-33167 (172.29.0.3:33167) with 16 core(s)
+24/01/28 07:09:38 INFO BlockManagerMaster: Removal of executor 0 requested
+24/01/28 07:09:38 INFO StandaloneSchedulerBackend$StandaloneDriverEndpoint: Asked to remove non-existent executor 0
+24/01/28 07:09:38 INFO BlockManagerMasterEndpoint: Removing block manager BlockManagerId(0, 172.29.0.3, 35725, None)
+24/01/28 07:09:38 INFO StandaloneSchedulerBackend: Granted executor ID app-20240128070933-0005/4 on hostPort 172.29.0.3:33167 with 16 core(s), 1024.0 MiB RAM
+24/01/28 07:09:38 INFO StandaloneAppClient$ClientEndpoint: Executor updated: app-20240128070933-0005/4 is now RUNNING
+24/01/28 07:09:38 INFO BlockManagerInfo: Added broadcast_1_piece0 in memory on 172.29.0.4:42645 (size: 2.6 KiB, free: 366.3 MiB)
+24/01/28 07:09:40 INFO BlockManagerInfo: Added broadcast_0_piece0 in memory on 172.29.0.4:42645 (size: 32.7 KiB, free: 366.3 MiB)
+24/01/28 07:09:42 INFO TaskSetManager: Finished task 0.0 in stage 0.0 (TID 0) in 3756 ms on 172.29.0.4 (executor 1) (1/2)
+24/01/28 07:09:42 INFO TaskSetManager: Finished task 1.0 in stage 0.0 (TID 1) in 3698 ms on 172.29.0.4 (executor 1) (2/2)
+24/01/28 07:09:42 INFO TaskSchedulerImpl: Removed TaskSet 0.0, whose tasks have all completed, from pool 
+24/01/28 07:09:42 INFO DAGScheduler: ResultStage 0 (collect at TeraValidate.scala:98) finished in 4.715 s
+24/01/28 07:09:42 INFO DAGScheduler: Job 0 is finished. Cancelling potential speculative or zombie tasks for this job
+24/01/28 07:09:42 INFO TaskSchedulerImpl: Killing all running tasks in stage 0: Stage finished
+24/01/28 07:09:42 INFO DAGScheduler: Job 0 finished: collect at TeraValidate.scala:98, took 4.856003 s
+24/01/28 07:09:42 INFO SparkContext: Starting job: count at TeraValidate.scala:101
+24/01/28 07:09:42 INFO DAGScheduler: Got job 1 (count at TeraValidate.scala:101) with 2 output partitions
+24/01/28 07:09:42 INFO DAGScheduler: Final stage: ResultStage 1 (count at TeraValidate.scala:101)
+24/01/28 07:09:42 INFO DAGScheduler: Parents of final stage: List()
+24/01/28 07:09:42 INFO DAGScheduler: Missing parents: List()
+24/01/28 07:09:42 INFO DAGScheduler: Submitting ResultStage 1 (hdfs://main:9000/spark/tera-out NewHadoopRDD[0] at newAPIHadoopFile at TeraValidate.scala:60), which has no missing parents
+24/01/28 07:09:42 INFO MemoryStore: Block broadcast_2 stored as values in memory (estimated size 3.5 KiB, free 365.9 MiB)
+24/01/28 07:09:42 INFO MemoryStore: Block broadcast_2_piece0 stored as bytes in memory (estimated size 2.1 KiB, free 365.9 MiB)
+24/01/28 07:09:42 INFO BlockManagerInfo: Added broadcast_2_piece0 in memory on main:32943 (size: 2.1 KiB, free: 366.3 MiB)
+24/01/28 07:09:42 INFO SparkContext: Created broadcast 2 from broadcast at DAGScheduler.scala:1535
+24/01/28 07:09:42 INFO DAGScheduler: Submitting 2 missing tasks from ResultStage 1 (hdfs://main:9000/spark/tera-out NewHadoopRDD[0] at newAPIHadoopFile at TeraValidate.scala:60) (first 15 tasks are for partitions Vector(0, 1))
+24/01/28 07:09:42 INFO TaskSchedulerImpl: Adding task set 1.0 with 2 tasks resource profile 0
+24/01/28 07:09:42 INFO TaskSetManager: Starting task 0.0 in stage 1.0 (TID 2) (172.29.0.4, executor 1, partition 0, ANY, 7469 bytes) 
+24/01/28 07:09:42 INFO TaskSetManager: Starting task 1.0 in stage 1.0 (TID 3) (172.29.0.4, executor 1, partition 1, ANY, 7469 bytes) 
+24/01/28 07:09:42 INFO BlockManagerInfo: Added broadcast_2_piece0 in memory on 172.29.0.4:42645 (size: 2.1 KiB, free: 366.3 MiB)
+24/01/28 07:09:42 INFO TaskSetManager: Finished task 1.0 in stage 1.0 (TID 3) in 295 ms on 172.29.0.4 (executor 1) (1/2)
+24/01/28 07:09:42 INFO TaskSetManager: Finished task 0.0 in stage 1.0 (TID 2) in 305 ms on 172.29.0.4 (executor 1) (2/2)
+24/01/28 07:09:42 INFO TaskSchedulerImpl: Removed TaskSet 1.0, whose tasks have all completed, from pool 
+24/01/28 07:09:42 INFO DAGScheduler: ResultStage 1 (count at TeraValidate.scala:101) finished in 0.326 s
+24/01/28 07:09:42 INFO DAGScheduler: Job 1 is finished. Cancelling potential speculative or zombie tasks for this job
+24/01/28 07:09:42 INFO TaskSchedulerImpl: Killing all running tasks in stage 1: Stage finished
+24/01/28 07:09:42 INFO DAGScheduler: Job 1 finished: count at TeraValidate.scala:101, took 0.334681 s
+num records: 1000000
+checksum: 7a30469d6f066
+part 0
+lastMaxArrayBuffer(0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+min ArrayBuffer(0, 0, 3, 54, 152, 164, 7, 144, 183, 67)
+max ArrayBuffer(127, 255, 226, 102, 161, 20, 166, 2, 159, 124)
+part 1
+lastMaxArrayBuffer(127, 255, 226, 102, 161, 20, 166, 2, 159, 124)
+min ArrayBuffer(128, 0, 7, 213, 79, 206, 114, 77, 215, 0)
+max ArrayBuffer(255, 255, 250, 189, 147, 44, 30, 75, 170, 80)
+num records: 1000000
+checksum: 7a30469d6f066
+partitions are properly sorted
+24/01/28 07:09:42 INFO SparkContext: Invoking stop() from shutdown hook
+24/01/28 07:09:42 INFO SparkContext: SparkContext is stopping with exitCode 0.
+24/01/28 07:09:42 INFO SparkUI: Stopped Spark web UI at http://main:4040
+24/01/28 07:09:42 INFO StandaloneSchedulerBackend: Shutting down all executors
+24/01/28 07:09:42 INFO StandaloneSchedulerBackend$StandaloneDriverEndpoint: Asking each executor to shut down
+24/01/28 07:09:42 INFO MapOutputTrackerMasterEndpoint: MapOutputTrackerMasterEndpoint stopped!
+24/01/28 07:09:42 INFO MemoryStore: MemoryStore cleared
+24/01/28 07:09:42 INFO BlockManager: BlockManager stopped
+24/01/28 07:09:42 INFO BlockManagerMaster: BlockManagerMaster stopped
+24/01/28 07:09:42 INFO OutputCommitCoordinator$OutputCommitCoordinatorEndpoint: OutputCommitCoordinator stopped!
+24/01/28 07:09:42 INFO SparkContext: Successfully stopped SparkContext
+24/01/28 07:09:42 INFO ShutdownHookManager: Shutdown hook called
+24/01/28 07:09:42 INFO ShutdownHookManager: Deleting directory /tmp/spark-b5c7d1b7-e395-4ea6-8944-1430a78feb94
+24/01/28 07:09:42 INFO ShutdownHookManager: Deleting directory /tmp/spark-2c8d8c15-553e-4976-97e2-4dd582135cb0

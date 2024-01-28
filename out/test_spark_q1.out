@@ -2,14 +2,38 @@
  cs511p1_template-main-1 copy resources/active_executors.scala to cs511p1_template-main-1:/active_executors.scala Copied
 + cat /active_executors.scala
 + spark-shell --master spark://main:7077
-Exception in thread "main" org.apache.spark.SparkException: Total executor cores must be a positive number
-	at org.apache.spark.deploy.SparkSubmitArguments.error(SparkSubmitArguments.scala:650)
-	at org.apache.spark.deploy.SparkSubmitArguments.validateSubmitArguments(SparkSubmitArguments.scala:270)
-	at org.apache.spark.deploy.SparkSubmitArguments.validateArguments(SparkSubmitArguments.scala:237)
-	at org.apache.spark.deploy.SparkSubmitArguments.<init>(SparkSubmitArguments.scala:122)
-	at org.apache.spark.deploy.SparkSubmit$$anon$2$$anon$3.<init>(SparkSubmit.scala:1094)
-	at org.apache.spark.deploy.SparkSubmit$$anon$2.parseArguments(SparkSubmit.scala:1094)
-	at org.apache.spark.deploy.SparkSubmit.doSubmit(SparkSubmit.scala:86)
-	at org.apache.spark.deploy.SparkSubmit$$anon$2.doSubmit(SparkSubmit.scala:1111)
-	at org.apache.spark.deploy.SparkSubmit$.main(SparkSubmit.scala:1120)
-	at org.apache.spark.deploy.SparkSubmit.main(SparkSubmit.scala)
+Setting default log level to "WARN".
+To adjust logging level use sc.setLogLevel(newLevel). For SparkR, use setLogLevel(newLevel).
+24/01/28 07:08:03 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+Spark context Web UI available at http://main:4040
+Spark context available as 'sc' (master = spark://main:7077, app id = app-20240128070805-0000).
+Spark session available as 'spark'.
+Welcome to
+      ____              __
+     / __/__  ___ _____/ /__
+    _\ \/ _ \/ _ `/ __/  '_/
+   /___/ .__/\_,_/_/ /_/\_\   version 3.4.1
+      /_/
+         
+Using Scala version 2.12.17 (OpenJDK 64-Bit Server VM, Java 1.8.0_342)
+Type in expressions to have them evaluated.
+Type :help for more information.
+
+scala> import org.apache.spark.SparkContext
+import org.apache.spark.SparkContext
+
+scala> 
+
+scala> def currentActiveExecutors(sc: SparkContext): Seq[String] = {
+     |  val allExecutors = sc.getExecutorMemoryStatus.map(_._1)
+     |  val driverHost: String = sc.getConf.get("spark.driver.host")
+     |  allExecutors.filter(! _.split(":")(0).equals(driverHost)).toList
+     | }
+currentActiveExecutors: (sc: org.apache.spark.SparkContext)Seq[String]
+
+scala> 
+
+scala> currentActiveExecutors(sc)
+res0: Seq[String] = List(172.29.0.2:46195, 172.29.0.4:43251, 172.29.0.3:37095)
+
+scala> :quit
