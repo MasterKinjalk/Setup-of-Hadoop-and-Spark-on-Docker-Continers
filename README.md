@@ -16,3 +16,16 @@ Test Spark deployment.
 ```bash
 bash test_spark.sh
 ```
+### Additional Material for Part 3: 
+
+```bash
+bash test_sort.sh
+```
+
+After you run this command the given data will be sorted and stored as "test_sort.out" in the out folder. The result after running this is included here. 
+
+Apart from this in the sorting folder the datafile caps.csv and spark_app.py the app that sorts the csv file inside the docker is present. It uses pyspark. 
+
+### Image Proofs
+
+
