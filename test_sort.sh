@@ -27,19 +27,27 @@ docker-compose -f "$DOCKER_COMPOSE_FILE" exec "$SERVICE_NAME" bash -c "\
 # Run the PySpark script and capture the output
 echo "Running Spark application..."
 docker-compose -f "$DOCKER_COMPOSE_FILE" exec "$SERVICE_NAME" \
-    spark-submit "$SPARK_APP_PATH" > out/test_sort.out 2>&1
+    spark-submit "$SPARK_APP_PATH" > "$OUTPUT_FILE" 2>&1
 
 GREEN='\033[0;32m'
 RED='\033[0;31m'
 NC='\033[0m'
 
+# Regex pattern to match the output
+PATTERN="(\|[[:space:]]*[[:digit:]]{4}[[:space:]]*\|[[:space:]]*[[:digit:]]+-[[:digit:]]+-[[:digit:]]+[[:space:]]*\|)"
+
 # Check if the Spark application ran successfully
 if [ $? -eq 0 ]; then
     echo "Spark application ran successfully. Output saved to ${OUTPUT_FILE}"
-    echo -e " ${GREEN}PASS${NC}"
+    # Check if the output matches the regex pattern
+    if grep -E -q "$PATTERN" "$OUTPUT_FILE"; then
+        echo -e "${GREEN}PASS: Output matches the expected pattern.${NC}"
+    else
+        echo -e "${RED}FAIL: Output does not match the expected pattern.${NC}"
+    fi
 else
     echo "Spark application failed. Check ${OUTPUT_FILE} for details."
-    echo -e " ${RED}FAIL${NC}"
+    echo -e "${RED}FAIL${NC}"
 fi
 
 echo "Done! Exit."
